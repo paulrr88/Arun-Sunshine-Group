@@ -1,0 +1,909 @@
+/* N.B. desktop first, mobile breakpoints are further down the sheet.
+Everything up here is >1100px max-width */
+
+/* Hashtags
+#test - any test stuff that needs removing later
+#weird - any weird stuff I don't understand but don't have time to look up/doesn't matter
+*/
+
+
+/* -------------------------
+Basic element customisations - body, font faces, paragraph layout etc
+------------------------- */
+
+body {
+  background: url(../images/background.jpg) #ffeac7 no-repeat 0% 0%/100%;
+  font-family: "Verdana", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+
+img {
+  margin: 0;
+  padding: 2rem;
+}
+
+ol {
+  margin: 1.5em auto;
+  width: 60%;
+}
+
+ol li {
+  padding: 0.5em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+table {
+  font-size: 1.6rem;
+}
+
+ul li {
+  padding: 0.5em 0;
+}
+
+/* -------------------------
+IDs and classes
+------------------------- */
+
+#aboutnav {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 3px #105cbd solid;
+}
+#aboutnav h2 {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
+
+#content {
+  background: #fff /*url(../images/nav-yellow.png) repeat-y right (for if/when 3D box design implemented)*/;
+  margin-top: 30px;
+  padding: 6em 2em 2em 2em;
+}
+#content p {                                           /* better margins for text on desktop */
+  width: 70%;
+  margin: 0 auto;
+}
+
+#diversity {                                           /* Diversity areas on home page */
+
+}
+
+#diversity #preparation {
+  background: url(../images/diversitybg-01.jpg) no-repeat 30% 60%;
+}
+#diversity #adultteacher {
+  background: url(../images/diversitybg-02.jpg) no-repeat 50% 20%;
+}
+#diversity #absorbentmind {
+  background: url(../images/diversitybg-03.jpg) no-repeat 50% 0%;
+}
+#diversity #lifeskills {
+  background: url(../images/diversitybg-04.jpg) no-repeat 50% 40%;
+}
+#diversity #childteacher {
+  background: url(../images/diversitybg-05.jpg) no-repeat 50% 0%;
+}
+#diversity #childsize {
+  background: url(../images/diversitybg-06.jpg) no-repeat 90% 40%;
+}
+#diversity #learningsenses {
+  background: url(../images/diversitybg-07.jpg) no-repeat 70% 35%;
+}
+#diversity #sensitive {
+  background: url(../images/diversitybg-08.jpg) no-repeat 80% 60%;
+}
+#diversity #joylearning {
+  background: url(../images/diversitybg-09.jpg) no-repeat 70% 40%;
+}
+#diversity #equipment {
+  background: url(../images/diversitybg-10.jpg) no-repeat 70% 30%;
+}
+#diversity #loveorder {
+  background: url(../images/diversitybg-11.jpg) no-repeat 70% 60%;
+}
+#diversity #imagination {
+  background: url(../images/diversitybg-12.jpg) no-repeat 70% 60%;
+}
+
+
+#header {
+  height: 373px;
+  position: relative;                                  /* allows for positioning of header-title below */
+}
+  #header-title-container {                            /* allows for centring of header-title despite absolute positioning */
+    margin: 0 auto;
+    width: 880px;                                      /* for some reason this scales for mobile without having to add breakpoints with smaller pixel values below, could be due to Skeleton? #weird I think it's because of text-align center below, when you add background colour this element behaves as I'd expect, not centred at all */
+  }
+  #header-title {
+    font-size: 5.5rem;
+    font-weight: 900;
+    margin-top: 100px;
+    padding: 0;
+    position: absolute;
+      bottom: 0;                                       /* aligns along bottom to line up with tagline text and navigation */
+    text-align: center;
+    text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+      -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+  }
+  /* spans that govern changing text colour */
+
+    #header-the {
+      color: #3a25bf;
+    }
+    #header-new {
+      color: #125bbd;
+    }
+    #header-montessori {
+      color: #ffa400;
+    }
+    #header-preschool {
+      color: #00bc7e;
+    }
+
+  #header-logo {
+    background: url(../images/logo.png) no-repeat center/263px;
+    height: 171px;
+    position: absolute;                                /* aligns well until first breakpoint, then needs fixing, see below! */
+    top: 100px;
+    left: 300px;
+    width: 263px;
+  }
+
+
+
+#footer {
+  font-size: 0.75em;
+  text-align: center;
+}
+#footer a:link {
+  color: #000;
+}
+#footer a:visited {
+  color: #000;
+}
+#footer ul {
+  margin-bottom: 0;
+}
+#footer ul li {
+  border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
+  display: inline-block;                                  /* displays everything horizontal instead of vertical */
+  margin-right: 20px;
+  padding-right: 20px;
+}
+#footer ul li:last-child {
+  border-right: 0;                                        /* stops border on last link */
+  margin-right: 0;
+}
+
+/* Navigation IDs */
+
+  #nav {
+    color: #000;
+    font-size: 1.75rem;
+    height: 113px;
+    text-align: center;
+    width: 100%;          /* helps with centring */
+  }
+    #nav p {
+      font-size: 1.5rem;
+    }
+
+    #nav .centre {
+      display: inline-block;                                  /* somehow causes nav to centre */
+      *display: inline;                                       /* IE7 */
+      *zoom: 1;
+      width: 95%;
+    }
+
+    /* taglines for phone number, email and mobile, scaling etc, appear within nav area hence why they're here */
+    #tagline-phone p {
+      color: #105cbd;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 2.5rem;
+      margin: 0;
+      padding: 0;
+      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    }
+    #tagline-email p {
+      color: #3a0fc4;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 1.75rem;
+      margin: 0;
+      padding: 0;
+      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    }
+    #tagline-address p {
+      color: #105cbd;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 1.75rem;
+      margin: 0;
+      padding: 0;
+      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    }
+    #tagline-phone-mobile p {
+      color: #105cbd;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 2.5rem;
+      margin: 0;
+      padding: 0;
+      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    }
+
+    #navbuttons {                                             /* container for nav buttons */
+      position: relative;
+      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+    #navbuttons a.nav:link, a.nav:visited {
+      text-decoration: none;
+      color: #fff;
+    }
+      #navbuttons-aligner {                                   /* helps to centre absolutely positioned buttons below, when resized in breakpoints for smaller resolutions. Stops them from just sitting off-centre at in-between window sizes or resolutions! */
+        margin: 20px auto 0 auto;
+        position: relative;
+        width: 880px;
+      }
+
+
+
+      #home {                                                   /* box for home text in navigation box */
+        background: url(../images/nav-blue.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 20px;
+          left: 0;
+        width: 131px;
+        z-index: 90;
+      }
+      #about {
+        background: url(../images/nav-green.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 10px;
+          left: 129px;
+        width: 131px;
+        z-index: 100;
+      }
+      #dates {
+        background: url(../images/nav-yellow.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 40px;
+          left: 262px;
+        width: 131px;
+        z-index: 100;
+      }
+      #child {
+        background: url(../images/nav-blue-big.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 0px;
+          left: 390px;
+        width: 229px;
+        z-index: 100;
+      }
+      #contact {
+        background: url(../images/nav-yellow.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 10px;
+          left: 615px;
+        width: 131px;
+        z-index: 100;
+      }
+      #facebook {
+        background: url(../images/nav-purple.png) no-repeat 0 0;
+        height: 65px;
+        padding-top: 15px;
+        position: absolute;
+          top: 0px;
+          left: 744px;
+        width: 131px;
+        z-index: 100;
+      }
+
+/* Nav IDs end */
+
+#table {                                                  /* table on contacts page etc */
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 75%;
+}
+#table td {
+  word-wrap: break-word;
+}
+#tableBig {                                               /* tables with more columns */
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 90%;
+}
+
+#top {                                                    /* navigation links at top of each page */
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: right;
+  width: 100%;                                            /* helps with centring navigation */
+}
+#top img {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;                                    /* fixes images wanting to stick to bottom of tallest image, like the accredited logo! */
+}
+#top ul {
+  margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
+                                                          - keeps margin on top to space from other text*/
+}
+
+#top ul li {
+  display: inline-block;                                /* wraps with viewport size */
+  font-size: 1.5rem;
+  margin-right: 20px;                                   /* spacing for list items when horizontal */
+  text-align:left;
+  *display:inline;/* IE7 */
+  *zoom:1;
+
+}
+#top ul li:last-child {
+  margin-right: 0;                                        /* prevents margin from throwing off last list item */
+}
+
+div a.nostyle {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4.title {                                                /* title at top of all content pages */
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+}
+h1,h2,h3,h4.linkbutton {
+  color: #000;
+  margin: 0;
+  padding: 0.5em;
+}
+h1,h2,h3,h4.linkbutton a {
+  color: #000;
+  text-decoration: none;
+}
+h1.less-space, h2.less-space, h3.less-space, h4.less-space {
+  padding: 1em;
+  margin: 0;
+}
+h1.less-space-bottom, h2.less-space-bottom, h3.less-space-bottom, h4.less-space-bottom {
+  padding: 1em 1em 0.4em 1em;
+  margin: 0;
+}
+h1.pretty-green, h2.pretty-green, h3.pretty-green, h4.pretty-green {
+  border-bottom: 5px #4fdcaf solid;
+}
+h1.pretty-orange, h2.pretty-orange, h3.pretty-orange, h4.pretty-orange {
+  border-bottom: 5px #ffc55b solid;
+}
+h1.pretty-purple, h2.pretty-purple, h3.pretty-purple, h4.pretty-purple {
+  border-bottom: 5px #583cca solid;
+}
+h1.pretty-blue, h2.pretty-blue, h3.pretty-blue, h4.pretty-blue {
+  border-bottom: 5px #5f94dd solid;
+}
+h1.width-small, h2.width-small, h3.width-small, h4.width-small {
+  width: 70%;
+  margin: 0 auto;
+}
+h1.pagenav {
+  font-size: 4.5rem;
+  margin: 0;
+  padding: 0 0 0.25em 0;
+}
+h2.mission {
+  margin: 0;
+  padding: 1em 0 0.5em 0;
+}
+h3.contents {
+  padding: 1.5em 0 0 0;
+}
+
+img.200 {
+  width: 200px;
+}
+img.fluid {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1em 1em 1em 1.3em;
+}
+img.left {
+  float: left;
+}
+img.right {
+  float: right;
+}
+
+p.backtotop {
+  font-weight: bolder;
+  padding: 2em 0 2em 0;
+  text-align: center;
+}
+p.centre {
+  text-align: center;
+}
+
+ul.body {
+  padding-left: 0.5em;
+  margin: 0 auto;
+  width: 70%;
+}
+ul.compact {
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 70%;
+}
+ul.compact li {
+  padding: 0;
+  margin: 0;
+}
+ul.contents {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0.5em;
+  text-align: center;
+  width: 70%;
+}
+ul.contents li {
+  padding: 0;
+}
+ul.lesspadding {
+  padding-left: 3em;
+  width: 70%;
+}
+ul.nostyle {                                             /* removes styling from lists as needed */
+  list-style: none;
+  margin-left: 1.5rem;
+}
+ul.pagenav {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+ul.pagenav li {
+  border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
+  display: inline-block;                                  /* displays everything horizontal instead of vertical */
+}
+ul.pagenav li.noborder {
+  border-right: 0;                                        /* stops border on any link it's not wanted on */
+  margin-right: 0;
+}
+ul.pagenav li.pagenav-li {
+  margin: 0;
+  padding: 0 1.5em 0 1.5em;
+}
+ul.sitemap {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.background-blue {
+  background: #c6dcf8;
+}
+.background-green {
+  background: #4fdcaf;
+}
+.background-green-light {
+  background: #87efcd;
+}
+.background-orange {
+  background: #ffd890;
+}
+.background-orange-light {
+  background: #ffeac7;
+}
+.background-orange-dark {
+  background: #ffc55b;
+}
+.background-purple {
+  background: #d2c9fa;
+}
+
+.centre {
+  text-align: center;
+}
+.centre-600 {                                             /* centres images with 600px width */
+  max-width: 100%;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.centre-400 {                                             /* centres images with 400px width */
+  max-width: 100%;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.spacer {                                                /* works with Skeleton to allow white space between vertically stacked divs */
+  float: left;
+  height: 3em;
+  width: 100%;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+
+
+
+
+
+
+/* -------------------------
+Breakpoints for smaller screen sizes
+------------------------- */
+
+@media screen and (max-width: 1100px) { /*Desktop*/
+
+  #content {
+    margin-top: 30px;
+    padding-top: 12em;
+  }
+  #content p {
+    width: 90%;               /* reduces extent of margins on paragraph text for smaller resolutions */
+  }
+  #content ul {
+    width: 90%;               /* matches p */
+  }
+
+  #header-logo {
+    top: 50px;
+    left: 200px;
+  }
+
+  #navbuttons {
+    margin-bottom: 20px;
+  }
+  #navbuttons-aligner {
+    width: 630px;
+  }
+
+
+  #contact {
+    top: 120px;
+    left: 210px;
+    z-index: 100;
+  }
+  #facebook {
+    top: 110px;
+    left: 338px;
+    z-index: 100;
+  }
+
+  ul.body {
+    padding-left: 0.25em;          /* reduces padding as it causes ridiculous misalign */
+  }
+  ul.lesspadding {
+    padding-left: 0.5em;
+  }
+}
+
+@media screen and (max-width: 750px) { /*Tablet*/
+
+  body {
+    background-size: 1050px;
+    background-position: 40% top;
+    font-size: 1.4rem;
+  }
+
+  /* CSS for table mobile fix JavaScript, from: http://sitesforprofit.com/responsive-tables-in-wordpress */
+  table {width:100%;}
+  thead {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+  tbody td {display: block;  text-align:center;}
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+  }
+
+  #content {
+    margin-top: 60px;
+    padding-top: 16em;
+  }
+
+  #header {                                               /* resize header for tablet */
+    height: 277px;
+  }
+    #header-title {
+      font-size: 4.5rem;
+    }
+    #header-logo {
+      top: 0px;
+      left: 100px;
+    }
+
+  #nav ul {
+    margin-top: 20px;
+  }
+    #navbuttons-aligner {
+      width: 400px;
+    }
+      #about {
+        left: 127px;
+      }
+      #dates {
+        top: 30px;
+        left: 255px;
+      }
+      #child {
+        top: 100px;
+        left: 20px;
+        z-index: 100;
+      }
+      #contact {
+        top: 120px;
+        left: 245px;
+        z-index: 100;
+      }
+      #facebook {
+        top: 170px;
+        left: 120px;
+        z-index: 100;
+      }
+  #top ul li {
+    font-size: 1.5rem;                                    /* fixes top logos etc so they don't interfere with design on lower resolutions; forces them to align centre-ish and out of the way of top graphics */
+    display: inline;
+  }
+  #top img {
+    width: 70px;
+  }
+
+  img.fluid {                                             /* left padding is weird, this makes it look better below max res, 1.3em is good max, 1em is good when not max */
+    padding: 1em 1em 1em 1em;
+  }
+}
+
+@media screen and (max-width: 600px) { /*Phablet etc*/
+
+  #content {
+    margin-top: 80px;
+  }
+  #diversity #preparation {
+    background: url(../images/diversitybg-01.jpg) no-repeat 30% 30%;
+  }
+  #diversity #adultteacher {
+    background: url(../images/diversitybg-02.jpg) no-repeat 50% 40%;
+  }
+  #diversity #absorbentmind {
+    background: url(../images/diversitybg-03.jpg) no-repeat 50% 0%;
+  }
+  #diversity #lifeskills {
+    background: url(../images/diversitybg-04.jpg) no-repeat 50% 40%;
+  }
+  #diversity #childteacher {
+    background: url(../images/diversitybg-05.jpg) no-repeat 50% 0%;
+  }
+  #diversity #childsize {
+    background: url(../images/diversitybg-06.jpg) no-repeat 90% 40%;
+  }
+  #diversity #learningsenses {
+    background: url(../images/diversitybg-07.jpg) no-repeat 70% 95%;
+  }
+  #diversity #sensitive {
+    background: url(../images/diversitybg-08.jpg) no-repeat 80% 30%;
+  }
+  #diversity #joylearning {
+    background: url(../images/diversitybg-09.jpg) no-repeat 70% 40%;
+  }
+  #diversity #equipment {
+    background: url(../images/diversitybg-10.jpg) no-repeat 70% 30%;
+  }
+  #diversity #loveorder {
+    background: url(../images/diversitybg-11.jpg) no-repeat 70% 90%;
+  }
+  #diversity #imagination {
+    background: url(../images/diversitybg-12.jpg) no-repeat 70% 40%;
+  }
+  #header-title {
+    font-size: 3.5rem;
+  }
+  #header-logo {
+    background-size: 213px;
+    height: 131px;
+    top: 50px;
+    left: 100px;
+    width: 213px;
+  }
+
+  #nav p {
+    font-size: 1.2rem;
+  }
+
+    #tagline-phone p {
+      font-size: 2.5rem;
+    }
+    #tagline-email p {
+      font-size: 1.75rem;
+    }
+    #tagline-phone-mobile p {
+      font-size: 2.5rem;
+    }
+
+    ul.pagenav li.pagenav-li {
+      margin: 0;
+      padding: 1em 1.5em 0 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 500px) { /*Mobile phones*/
+
+  body {
+    background-size: 900px;
+    background-position: 20% top;
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+
+  table {
+    font-size: 1.4rem;
+  }
+
+  ul.lesspadding {
+    padding-left: 0.5em;
+  }
+
+  ul.pagenav li {
+    border-right: 0;                           /* gets rid of all borders when list displays as block as it will at this res */
+    margin-right: 0;                           /* gets rid of unwanted padding and margin which throws it off when displayed block */
+    padding-right: 0;
+  }
+
+  #content {
+    margin-top: 80px;
+    padding-top: 18em;
+  }
+
+
+
+  #header {                                                 /* header image background etc - set for mobile */
+    height: 107px;
+    margin-top: 20px;
+  }
+  #header-logo {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  #header-title {
+    font-size: 3.2rem;
+  }
+
+  #nav {
+    margin-top: 20px;
+  }
+
+    #tagline-phone p {
+      font-size: 2rem;
+    }
+    #tagline-email p {
+      font-size: 1.5rem;
+    }
+    #tagline-phone-mobile p {
+      font-size: 2rem;
+    }
+
+    #navbuttons {
+      margin-bottom: 40px;
+    }
+      #navbuttons-aligner {
+        width: 280px;
+      }
+        #about {
+          left: 127px;
+        }
+        #dates {
+          top: 80px;
+          left: 75px;
+        }
+        #child {
+          top: 145px;
+          left: 20px;
+          z-index: 100;
+        }
+        #contact {
+          top: 210px;
+          left: 0;
+          z-index: 100;
+        }
+        #facebook {
+          top: 205px;
+          left: 140px;
+          z-index: 100;
+        }
+
+  #tableBig {                                                  /* tables with more columns, needs smaller font */
+    font-size: 1.2rem;
+  }
+
+  #top {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .left {
+    float: none;                                            /* just because floating doesn't work on mobile,
+                                                            same below */
+  }
+
+  .right {
+    float: none;
+  }
+}
