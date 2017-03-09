@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css"><!-- reset file do not change -->
   <link rel="stylesheet" href="css/skeleton.css"><!-- framework CSS -->
   <link rel="stylesheet" href="css/style.css"><!--my additions-->
+  <link rel="stylesheet" href="css/breaks.css"><!--breakpoints of mine-->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,7 +40,7 @@
       <!--Start of top information area--><div class="twelve columns" id="top">
         <ul class="nostyle">
           <li class="vertical-top"><a href="sitemap/">Sitemap</a></li>
-          <li><a href="<?php perch_content('Food rating link'); ?>"><img src="images/food.jpg" width="100" alt="Link to our food hygiene rating" /></a></li>
+          <li><a href="<?php /*perch_content('Food rating link');*/ ?>"><img src="images/food.jpg" width="100" alt="Link to our food hygiene rating" /></a></li>
           <li><img src="images/accredited.jpg" width="70" alt="This school is Montessori MEAB Accredited" /></a></li>
 
         </ul>
@@ -77,14 +78,6 @@
       <!--Navigation area begins--><div class="twelve columns" id="nav">
         <!--Taglines at bottom of header-->
 
-        <?php include('header-contact.php')?>
-
-        <!--<div class="seven columns">
-          <p id="left">In the Anglican Diocese of Chichester, and Worthing Deanery</p>
-        </div>
-        <div class="five columns">
-          <p id="right">Church Lane, Ferring, West Sussex, BN12 5HN</p>
-        </div>-->
         <div class="twelve columns" id="navbuttons">
           <div id="navbuttons-aligner">
             <a class="nav" href=""><div id="home">Home</div></a>
@@ -112,7 +105,7 @@
         <div class="six columns"><!--left column-->
           <div class="twelve columns background-orange-light"><!--left column top-->
             <div class="twelve columns">
-                <?php perch_content('Image 1'); ?>
+                <?php /*perch_content('Image 1');*/ ?>
             </div>
 
             <p class="centre">The New Montessori Pre-school is run by parents for parents. It is the only accredited Montessori pre-school in Worthing and we are proud to be the only Montessori Charity pre-school in the UK. Our <a href="about/team/#manage">Management Committee</a> ensures that the <a href="about/method/">Montessori Method of education</a> is offered to all children at an affordable price, with highly qualified and dedicated staff, and a high ratio of adults to children.</p>
@@ -132,7 +125,7 @@
 
 
           <div class="twelve columns background-orange-dark">
-            <p class="centre"><strong><a href="<?php perch_content('Link to MCI'); ?>" class="nostyle">Visit Montessori Centre International</a></strong></p>
+            <p class="centre"><strong><a href="<?php /*perch_content('Link to MCI');*/ ?>" class="nostyle">Visit Montessori Centre International</a></strong></p>
           </div>
 
           <div class="spacer"></div>
@@ -156,9 +149,9 @@
           <div class="twelve columns">
             <br />
 
-            <p>We are a non-profit organisation providing Montessori education for pre-school children in the Worthing area. We are a registered charity (number 1086853), and you are welcome to view our <a href="<?php perch_content('Link to Charity Commission register entry'); ?>">Charity Commission register entry</a>.</p>
+            <p>We are a non-profit organisation providing Montessori education for pre-school children in the Worthing area. We are a registered charity (number 1086853), and you are welcome to view our <a href="<?php /*perch_content('Link to Charity Commission register entry');*/ ?>">Charity Commission register entry</a>.</p>
 
-            <p>We are also a registered company (number 3908382); details available from <a href="<?php perch_content('Link to Companies House entry'); ?>">Companies House</a>.</p>
+            <p>We are also a registered company (number 3908382); details available from <a href="<?php /*perch_content('Link to Companies House entry');*/ ?>">Companies House</a>.</p>
 
             <p><a href="about/"><strong>Learn more about us!</strong></a></p>
 
@@ -166,7 +159,7 @@
           </div>
 
           <div class="twelve columns background-orange-dark">
-            <h3 class="linkbutton"><?php perch_content('Link to EYFS document'); ?></h3>
+            <h3 class="linkbutton"><?php /*perch_content('Link to EYFS document');*/ ?></h3>
 
             <p class="centre">Our curriculum is based on this!</p>
           </div>

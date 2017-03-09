@@ -13,12 +13,12 @@ Basic element customisations - body, font faces, paragraph layout etc
 
 body {
   background: url(../images/background.jpg) #ffeac7 no-repeat 0% 0%/100%;
-  font-family: "Verdana", sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: 1.6rem;
 }
 
 h1,h2,h3,h4 {
-  font-family: "Georgia", serif;
+  font-family: "Impact", serif;
   font-weight: 100;
   margin: 0;
   padding: 1.5rem;
@@ -68,7 +68,7 @@ ul li {
 IDs and classes
 ------------------------- */
 
-#aboutnav {
+/*#aboutnav {
   width: 90%;
   margin: 0 auto;
   border-bottom: 3px #105cbd solid;
@@ -76,7 +76,7 @@ IDs and classes
 #aboutnav h2 {
   margin: 0;
   padding: 0 0 0.5em 0;
-}
+}*/
 
 #content {
   background: #fff /*url(../images/nav-yellow.png) repeat-y right (for if/when 3D box design implemented)*/;
@@ -86,47 +86,6 @@ IDs and classes
 #content p {                                           /* better margins for text on desktop */
   width: 70%;
   margin: 0 auto;
-}
-
-#diversity {                                           /* Diversity areas on home page */
-
-}
-
-#diversity #preparation {
-  background: url(../images/diversitybg-01.jpg) no-repeat 30% 60%;
-}
-#diversity #adultteacher {
-  background: url(../images/diversitybg-02.jpg) no-repeat 50% 20%;
-}
-#diversity #absorbentmind {
-  background: url(../images/diversitybg-03.jpg) no-repeat 50% 0%;
-}
-#diversity #lifeskills {
-  background: url(../images/diversitybg-04.jpg) no-repeat 50% 40%;
-}
-#diversity #childteacher {
-  background: url(../images/diversitybg-05.jpg) no-repeat 50% 0%;
-}
-#diversity #childsize {
-  background: url(../images/diversitybg-06.jpg) no-repeat 90% 40%;
-}
-#diversity #learningsenses {
-  background: url(../images/diversitybg-07.jpg) no-repeat 70% 35%;
-}
-#diversity #sensitive {
-  background: url(../images/diversitybg-08.jpg) no-repeat 80% 60%;
-}
-#diversity #joylearning {
-  background: url(../images/diversitybg-09.jpg) no-repeat 70% 40%;
-}
-#diversity #equipment {
-  background: url(../images/diversitybg-10.jpg) no-repeat 70% 30%;
-}
-#diversity #loveorder {
-  background: url(../images/diversitybg-11.jpg) no-repeat 70% 60%;
-}
-#diversity #imagination {
-  background: url(../images/diversitybg-12.jpg) no-repeat 70% 60%;
 }
 
 
@@ -152,20 +111,6 @@ IDs and classes
       -1px 1px 0 #fff,
       1px 1px 0 #fff;
   }
-  /* spans that govern changing text colour */
-
-    #header-the {
-      color: #3a25bf;
-    }
-    #header-new {
-      color: #125bbd;
-    }
-    #header-montessori {
-      color: #ffa400;
-    }
-    #header-preschool {
-      color: #00bc7e;
-    }
 
   #header-logo {
     background: url(../images/logo.png) no-repeat center/263px;
@@ -407,7 +352,7 @@ h1,h2,h3,h4.title {                                                /* title at t
   padding: 1em 0 1.5em 0;
   text-align: center;
 }
-h1,h2,h3,h4.linkbutton {
+/*h1,h2,h3,h4.linkbutton {
   color: #000;
   margin: 0;
   padding: 0.5em;
@@ -415,7 +360,7 @@ h1,h2,h3,h4.linkbutton {
 h1,h2,h3,h4.linkbutton a {
   color: #000;
   text-decoration: none;
-}
+}*/
 h1.less-space, h2.less-space, h3.less-space, h4.less-space {
   padding: 1em;
   margin: 0;
@@ -424,7 +369,7 @@ h1.less-space-bottom, h2.less-space-bottom, h3.less-space-bottom, h4.less-space-
   padding: 1em 1em 0.4em 1em;
   margin: 0;
 }
-h1.pretty-green, h2.pretty-green, h3.pretty-green, h4.pretty-green {
+/*h1.pretty-green, h2.pretty-green, h3.pretty-green, h4.pretty-green {
   border-bottom: 5px #4fdcaf solid;
 }
 h1.pretty-orange, h2.pretty-orange, h3.pretty-orange, h4.pretty-orange {
@@ -435,7 +380,7 @@ h1.pretty-purple, h2.pretty-purple, h3.pretty-purple, h4.pretty-purple {
 }
 h1.pretty-blue, h2.pretty-blue, h3.pretty-blue, h4.pretty-blue {
   border-bottom: 5px #5f94dd solid;
-}
+}*/
 h1.width-small, h2.width-small, h3.width-small, h4.width-small {
   width: 70%;
   margin: 0 auto;
@@ -557,16 +502,15 @@ ul.sitemap {
 .centre {
   text-align: center;
 }
-.centre-600 {                                             /* centres images with 600px width */
-  max-width: 100%;
-  width: 600px;
-  margin: 0 auto;
-}
-
 .centre-400 {                                             /* centres images with 400px width */
+  margin: 0 auto;
   max-width: 100%;
   width: 400px;
+}
+.centre-600 {                                             /* centres images with 600px width */
   margin: 0 auto;
+  max-width: 100%;
+  width: 600px;
 }
 
 .left {
@@ -584,326 +528,4 @@ ul.sitemap {
 
 .vertical-top {
   vertical-align: top;
-}
-
-
-
-
-
-
-
-/* -------------------------
-Breakpoints for smaller screen sizes
-------------------------- */
-
-@media screen and (max-width: 1100px) { /*Desktop*/
-
-  #content {
-    margin-top: 30px;
-    padding-top: 12em;
-  }
-  #content p {
-    width: 90%;               /* reduces extent of margins on paragraph text for smaller resolutions */
-  }
-  #content ul {
-    width: 90%;               /* matches p */
-  }
-
-  #header-logo {
-    top: 50px;
-    left: 200px;
-  }
-
-  #navbuttons {
-    margin-bottom: 20px;
-  }
-  #navbuttons-aligner {
-    width: 630px;
-  }
-
-
-  #contact {
-    top: 120px;
-    left: 210px;
-    z-index: 100;
-  }
-  #facebook {
-    top: 110px;
-    left: 338px;
-    z-index: 100;
-  }
-
-  ul.body {
-    padding-left: 0.25em;          /* reduces padding as it causes ridiculous misalign */
-  }
-  ul.lesspadding {
-    padding-left: 0.5em;
-  }
-}
-
-@media screen and (max-width: 750px) { /*Tablet*/
-
-  body {
-    background-size: 1050px;
-    background-position: 40% top;
-    font-size: 1.4rem;
-  }
-
-  /* CSS for table mobile fix JavaScript, from: http://sitesforprofit.com/responsive-tables-in-wordpress */
-  table {width:100%;}
-  thead {display: none;}
-  tr:nth-of-type(2n) {background-color: inherit;}
-  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
-  tbody td {display: block;  text-align:center;}
-  tbody td:before {
-    content: attr(data-th);
-    display: block;
-    text-align:center;
-  }
-
-  #content {
-    margin-top: 60px;
-    padding-top: 16em;
-  }
-
-  #header {                                               /* resize header for tablet */
-    height: 277px;
-  }
-    #header-title {
-      font-size: 4.5rem;
-    }
-    #header-logo {
-      top: 0px;
-      left: 100px;
-    }
-
-  #nav ul {
-    margin-top: 20px;
-  }
-    #navbuttons-aligner {
-      width: 400px;
-    }
-      #about {
-        left: 127px;
-      }
-      #dates {
-        top: 30px;
-        left: 255px;
-      }
-      #child {
-        top: 100px;
-        left: 20px;
-        z-index: 100;
-      }
-      #contact {
-        top: 120px;
-        left: 245px;
-        z-index: 100;
-      }
-      #facebook {
-        top: 170px;
-        left: 120px;
-        z-index: 100;
-      }
-  #top ul li {
-    font-size: 1.5rem;                                    /* fixes top logos etc so they don't interfere with design on lower resolutions; forces them to align centre-ish and out of the way of top graphics */
-    display: inline;
-  }
-  #top img {
-    width: 70px;
-  }
-
-  img.fluid {                                             /* left padding is weird, this makes it look better below max res, 1.3em is good max, 1em is good when not max */
-    padding: 1em 1em 1em 1em;
-  }
-}
-
-@media screen and (max-width: 600px) { /*Phablet etc*/
-
-  #content {
-    margin-top: 80px;
-  }
-  #diversity #preparation {
-    background: url(../images/diversitybg-01.jpg) no-repeat 30% 30%;
-  }
-  #diversity #adultteacher {
-    background: url(../images/diversitybg-02.jpg) no-repeat 50% 40%;
-  }
-  #diversity #absorbentmind {
-    background: url(../images/diversitybg-03.jpg) no-repeat 50% 0%;
-  }
-  #diversity #lifeskills {
-    background: url(../images/diversitybg-04.jpg) no-repeat 50% 40%;
-  }
-  #diversity #childteacher {
-    background: url(../images/diversitybg-05.jpg) no-repeat 50% 0%;
-  }
-  #diversity #childsize {
-    background: url(../images/diversitybg-06.jpg) no-repeat 90% 40%;
-  }
-  #diversity #learningsenses {
-    background: url(../images/diversitybg-07.jpg) no-repeat 70% 95%;
-  }
-  #diversity #sensitive {
-    background: url(../images/diversitybg-08.jpg) no-repeat 80% 30%;
-  }
-  #diversity #joylearning {
-    background: url(../images/diversitybg-09.jpg) no-repeat 70% 40%;
-  }
-  #diversity #equipment {
-    background: url(../images/diversitybg-10.jpg) no-repeat 70% 30%;
-  }
-  #diversity #loveorder {
-    background: url(../images/diversitybg-11.jpg) no-repeat 70% 90%;
-  }
-  #diversity #imagination {
-    background: url(../images/diversitybg-12.jpg) no-repeat 70% 40%;
-  }
-  #header-title {
-    font-size: 3.5rem;
-  }
-  #header-logo {
-    background-size: 213px;
-    height: 131px;
-    top: 50px;
-    left: 100px;
-    width: 213px;
-  }
-
-  #nav p {
-    font-size: 1.2rem;
-  }
-
-    #tagline-phone p {
-      font-size: 2.5rem;
-    }
-    #tagline-email p {
-      font-size: 1.75rem;
-    }
-    #tagline-phone-mobile p {
-      font-size: 2.5rem;
-    }
-
-    ul.pagenav li.pagenav-li {
-      margin: 0;
-      padding: 1em 1.5em 0 1.5em;
-    }
-
-}
-
-@media screen and (max-width: 500px) { /*Mobile phones*/
-
-  body {
-    background-size: 900px;
-    background-position: 20% top;
-    font-size: 1.4rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 2.2rem;
-  }
-  h4 {
-    font-size: 2rem;
-  }
-
-  table {
-    font-size: 1.4rem;
-  }
-
-  ul.lesspadding {
-    padding-left: 0.5em;
-  }
-
-  ul.pagenav li {
-    border-right: 0;                           /* gets rid of all borders when list displays as block as it will at this res */
-    margin-right: 0;                           /* gets rid of unwanted padding and margin which throws it off when displayed block */
-    padding-right: 0;
-  }
-
-  #content {
-    margin-top: 80px;
-    padding-top: 18em;
-  }
-
-
-
-  #header {                                                 /* header image background etc - set for mobile */
-    height: 107px;
-    margin-top: 20px;
-  }
-  #header-logo {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-  #header-title {
-    font-size: 3.2rem;
-  }
-
-  #nav {
-    margin-top: 20px;
-  }
-
-    #tagline-phone p {
-      font-size: 2rem;
-    }
-    #tagline-email p {
-      font-size: 1.5rem;
-    }
-    #tagline-phone-mobile p {
-      font-size: 2rem;
-    }
-
-    #navbuttons {
-      margin-bottom: 40px;
-    }
-      #navbuttons-aligner {
-        width: 280px;
-      }
-        #about {
-          left: 127px;
-        }
-        #dates {
-          top: 80px;
-          left: 75px;
-        }
-        #child {
-          top: 145px;
-          left: 20px;
-          z-index: 100;
-        }
-        #contact {
-          top: 210px;
-          left: 0;
-          z-index: 100;
-        }
-        #facebook {
-          top: 205px;
-          left: 140px;
-          z-index: 100;
-        }
-
-  #tableBig {                                                  /* tables with more columns, needs smaller font */
-    font-size: 1.2rem;
-  }
-
-  #top {
-    visibility: hidden;
-    height: 0;
-  }
-
-  .left {
-    float: none;                                            /* just because floating doesn't work on mobile,
-                                                            same below */
-  }
-
-  .right {
-    float: none;
-  }
 }
