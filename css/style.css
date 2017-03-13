@@ -1,5 +1,4 @@
-/* N.B. desktop first, mobile breakpoints are further down the sheet.
-Everything up here is >1100px max-width */
+/* N.B. Everything up here is >1100px max-width, see breaks.css for other breakpoints */
 
 /* Hashtags
 #test - any test stuff that needs removing later
@@ -35,6 +34,11 @@ h3 {
 }
 h4 {
   font-size: 2.4rem;
+}
+
+header {
+  height: 373px;
+  position: relative;                                  /* allows for positioning of header-title below */
 }
 
 img {
@@ -89,10 +93,6 @@ IDs and classes
 }
 
 
-#header {
-  height: 373px;
-  position: relative;                                  /* allows for positioning of header-title below */
-}
   #header-title-container {                            /* allows for centring of header-title despite absolute positioning */
     margin: 0 auto;
     width: 880px;                                      /* for some reason this scales for mobile without having to add breakpoints with smaller pixel values below, could be due to Skeleton? #weird I think it's because of text-align center below, when you add background colour this element behaves as I'd expect, not centred at all */
@@ -127,25 +127,25 @@ IDs and classes
   font-size: 0.75em;
   text-align: center;
 }
-#footer a:link {
-  color: #000;
-}
-#footer a:visited {
-  color: #000;
-}
-#footer ul {
-  margin-bottom: 0;
-}
-#footer ul li {
-  border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
-  display: inline-block;                                  /* displays everything horizontal instead of vertical */
-  margin-right: 20px;
-  padding-right: 20px;
-}
-#footer ul li:last-child {
-  border-right: 0;                                        /* stops border on last link */
-  margin-right: 0;
-}
+  #footer a:link {
+    color: #000;
+  }
+  #footer a:visited {
+    color: #000;
+  }
+  #footer ul {
+    margin-bottom: 0;
+  }
+  #footer ul li {
+    border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
+    display: inline-block;                                  /* displays everything horizontal instead of vertical */
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  #footer ul li:last-child {
+    border-right: 0;                                        /* stops border on last link */
+    margin-right: 0;
+  }
 
 /* Navigation IDs */
 
@@ -204,10 +204,10 @@ IDs and classes
         -1px 1px 0 #fff,
         1px 1px 0 #fff;
     }
-    #tagline-phone-mobile p {
+    #tagline-charity p {
       color: #105cbd;
       font-family: "Trebuchet MS", sans-serif;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       margin: 0;
       padding: 0;
       text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
@@ -229,73 +229,79 @@ IDs and classes
       text-decoration: none;
       color: #fff;
     }
-      #navbuttons-aligner {                                   /* helps to centre absolutely positioned buttons below, when resized in breakpoints for smaller resolutions. Stops them from just sitting off-centre at in-between window sizes or resolutions! */
-        margin: 20px auto 0 auto;
+      /*#navbuttons-aligner {                                   /* helps to centre absolutely positioned buttons below, when resized in breakpoints for smaller resolutions. Stops them from just sitting off-centre at in-between window sizes or resolutions! */
+        /*margin: 20px auto 0 auto;
         position: relative;
         width: 880px;
-      }
+      } commented out due to not being useful for desktop, as want navigation to right align*/
 
 
 
       #home {                                                   /* box for home text in navigation box */
+        background: url(../images/nav-orange.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          right: 504px;
+        width: 94px;
+        z-index: 150;
+      }
+      #events {
+        background: url(../images/nav-yellow.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          right: 420px;
+        width: 94px;
+        z-index: 140;
+      }
+      #diary {
         background: url(../images/nav-blue.png) no-repeat 0 0;
-        height: 65px;
+        height: 43px;
         padding-top: 15px;
         position: absolute;
-          top: 20px;
-          left: 0;
-        width: 131px;
+          right: 336px;
+        width: 94px;
+        z-index: 130;
+      }
+      #news {
+        background: url(../images/nav-yellow.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          top: 0px;
+          right: 252px;
+        width: 94px;
+        z-index: 120;
+      }
+      #videos {
+        background: url(../images/nav-orange.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          right: 168px;
+        width: 94px;
+        z-index: 110;
+      }
+      #admin {
+        background: url(../images/nav-blue.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          top: 0px;
+          right: 84px;
+        width: 94px;
+        z-index: 100;
+      }
+      #findus {
+        background: url(../images/nav-orange.png) no-repeat 0 0;
+        height: 43px;
+        padding-top: 15px;
+        position: absolute;
+          top: 0px;
+          right: 0px;
+        width: 94px;
         z-index: 90;
-      }
-      #about {
-        background: url(../images/nav-green.png) no-repeat 0 0;
-        height: 65px;
-        padding-top: 15px;
-        position: absolute;
-          top: 10px;
-          left: 129px;
-        width: 131px;
-        z-index: 100;
-      }
-      #dates {
-        background: url(../images/nav-yellow.png) no-repeat 0 0;
-        height: 65px;
-        padding-top: 15px;
-        position: absolute;
-          top: 40px;
-          left: 262px;
-        width: 131px;
-        z-index: 100;
-      }
-      #child {
-        background: url(../images/nav-blue-big.png) no-repeat 0 0;
-        height: 65px;
-        padding-top: 15px;
-        position: absolute;
-          top: 0px;
-          left: 390px;
-        width: 229px;
-        z-index: 100;
-      }
-      #contact {
-        background: url(../images/nav-yellow.png) no-repeat 0 0;
-        height: 65px;
-        padding-top: 15px;
-        position: absolute;
-          top: 10px;
-          left: 615px;
-        width: 131px;
-        z-index: 100;
-      }
-      #facebook {
-        background: url(../images/nav-purple.png) no-repeat 0 0;
-        height: 65px;
-        padding-top: 15px;
-        position: absolute;
-          top: 0px;
-          left: 744px;
-        width: 131px;
-        z-index: 100;
       }
 
 /* Nav IDs end */
