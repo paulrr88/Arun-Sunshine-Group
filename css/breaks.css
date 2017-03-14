@@ -5,6 +5,10 @@
 
 @media screen and (max-width: 1100px) { /*Desktop small*/
 
+  header { /*reduces height so less margin between header area and nav*/
+    height: 300px;
+  }
+
   #content {
     margin-top: 30px;
     padding-top: 12em;
@@ -16,29 +20,38 @@
     width: 90%;               /* matches p */
   }
 
-  #header-logo {
-    top: 50px;
-    left: 200px;
+  #header-left { /*scales logo down*/
+    width: 20%;
+    height: 160px;
   }
-
-  #navbuttons {
-    margin-bottom: 20px;
+    #header-logo {
+      background: url(../images/logo.png) no-repeat center/160px;
+      width: 160px;
+      height: 160px;
+    }
+  #header-right { /*closer to logo in light of reduced width*/
+    position: absolute;
+      left: 25%;
+    width: 70%;
   }
-  #navbuttons-aligner {
-    width: 630px;
-  }
-
-
-  #contact {
-    top: 120px;
-    left: 210px;
-    z-index: 100;
-  }
-  #facebook {
-    top: 110px;
-    left: 338px;
-    z-index: 100;
-  }
+    #header-tagline {
+      width: 66%;
+    }
+    #header-tagline h1 {
+      font-size: 2.5rem;
+    }
+    #header-title {
+      height: 45px;
+      width: 66%;
+    }
+    #header-title h1 {
+      font-size: 4.5rem;
+    }
+    #lottery { /*scaled down, takes less room as well*/
+      background: url(../images/lottery.jpg) no-repeat 0 0/140px;
+      height: 140px;
+      width: 34%;
+    }
 
   ul.body {
     padding-left: 0.25em;          /* reduces padding as it causes ridiculous misalign */
@@ -69,20 +82,75 @@
   #content {
     margin-top: 60px;
     padding-top: 16em;
-    background: blue; /*#test*/
   }
 
-  header {                                               /* resize header for tablet */
-    height: 277px;
+  #header-left { /*scales logo down*/
+    height: 160px;
+    margin-top: 40px;
+    width: 20%;
   }
-  #header-logo {
-    background: url(../images/logo.png) no-repeat center/203px;    /* scales image */
-    height: 203px;                /* gives it dimension, stops it from being cut off/too small */
-    position: static;             /* returns to normal alignment from absolute */
-    width: 100%;                  /* aligns mid */
+    #header-logo {
+      background: url(../images/logo.png) no-repeat center/100px;
+      width: 100px;
+      height: 100px;
+    }
+  #header-right { /*closer to logo in light of reduced width*/
+    position: absolute;
+      top: 50px;
+      left: 25%;
+    width: 70%;
   }
+    #header-tagline {
+      width: 100%;
+    }
+    #header-tagline h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
     #header-title {
+      height: 45px;
+      margin-top: 90px;
+      width: 100%;
+    }
+    #header-title h1 {
       font-size: 4.5rem;
+      text-align: center;
+    }
+    #lottery { /*floating removed so can just have centred, use position: absolute to push it above the header text*/
+      background: url(../images/lottery.jpg) no-repeat 0 0/110px;
+      clear: both;
+      float: none;
+      height: 90px;
+      margin: 0 auto;
+      position: absolute;
+        top: 0;
+        left: 33%;
+      width: 34%;
+    }
+    #tagline-box {/*increase height to prevent text mushing into area below*/
+      height: 70px;
+    }
+      #tagline-phone { /*increase width and centre everything so can align email below it*/
+        width: 100%;
+        float: none;
+      }
+        #tagline-phone p {
+          float: none;
+          font-size: 2.1rem;
+          text-align: center;
+        }
+      #tagline-email {
+        background-color: cyan;
+        width: 100%;
+        float: none;
+      }
+        #tagline-email p {
+          float: none;
+          font-size: 1.8rem;
+          text-align: center;
+        }
+    #tagline-address {
+      height: 90px;
     }
 
   #nav ul {
@@ -203,8 +271,6 @@
   #header-title {
     font-size: 3.2rem;
     margin-top: 163px;            /* works with position: absolute; below to bump it down under the logo */
-    top: 0;
-    width: 100%;                  /* aligns mid */
   }
 
   #nav {

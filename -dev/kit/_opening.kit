@@ -28,6 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="<!--$dir-->images/favicon.png">
 
+  <!-- Google fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+
 </head>
 
 <body>
@@ -45,22 +50,70 @@
 
       <!--Header begin--><header>
 
-        <div>
+
+        <!--old layout <div>
           <div id="header-logo"></div>
 
           <div id="header-title-container">
             <h1 id="header-title">
               Arun Sunshine Group
             </h1>
+
           </div>
+        </div>-->
+
+        <div>
+
+          <div id="header-left">
+            <div id="header-logo">
+            </div>
+          </div>
+
+          <div id="header-right">
+            <div id="header-title">
+              <h1>
+                Arun Sunshine Group
+              </h1>
+            </div>
+            <div id="lottery"></div>
+            <div id="header-tagline">
+              <h1>
+                For Adults With A Learning Difficulty
+              </h1>
+            </div>
+
+            <div id="tagline-box">
+              <div id="tagline-phone">
+                <p><strong>
+                  <?php /*perch_content('Phone number');*/ ?>01903 714930
+                </strong></p>
+              </div>
+              <div id="tagline-email">
+                <p><strong>
+                  <?php /*perch_content('Email Derek');*/ ?>derek@arunsunshine.org.uk
+                </strong></p>
+              </div>
+            </div>
+            <div id="tagline-address">
+              <p>
+                <?php /*perch_content('Address');*/ ?><strong>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex, BN17 5JG</strong>
+              </p>
+            </div>
+            <div id="tagline-charity">
+              <p><strong>
+                <?php /*perch_content('Charity number');*/ ?><em>Registered Charity Number 1114803</em>
+              </strong></p>
+            </div>
+          </div>
+
         </div>
 
       </header><!--Header ends-->
 
 
 
-      <!--Navigation area begins--><div class="twelve columns" id="nav">
-        <!--Taglines at bottom of header-->
+      <!--Navigation area begins--><div class="twelve columns" id="nav" style="margin-top: 60px;">
+        <!--Taglines at bottom of header - old
 
         <div class="six columns" id="tagline-phone">
           <p><strong>
@@ -82,9 +135,9 @@
           <p><strong>
             <?php /*perch_content('Charity number');*/ ?><em>Registered Charity Number 1114803</em>
           </strong></p>
-        </div>
+        </div>-->
 
-        <div class="twelve columns" id="navbuttons">
+        <div class="twelve columns" id="navbuttons" style="margin-top: 100px;">
 
             <a class="nav" href="<!--$dir-->"><div id="home">Home</div></a>
             <a class="nav" href="<!--$dir-->about/"><div id="events">Events</div></a>

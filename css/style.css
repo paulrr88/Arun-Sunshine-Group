@@ -12,13 +12,13 @@ Basic element customisations - body, font faces, paragraph layout etc
 
 body {
   background: url(../images/background.jpg) #ffeac7 no-repeat 0% 0%/100%;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.6rem;
 }
 
 h1,h2,h3,h4 {
-  font-family: "Impact", serif;
-  font-weight: 100;
+  font-family: "BenchNine", sans-serif;
+  font-weight: bold;
   margin: 0;
   padding: 1.5rem;
 }
@@ -39,6 +39,7 @@ h4 {
 header {
   height: 373px;
   position: relative;                                  /* allows for positioning of header-title below */
+  width: 100%;
 }
 
 img {
@@ -83,7 +84,7 @@ IDs and classes
 }*/
 
 #content {
-  background: #fff /*url(../images/nav-yellow.png) repeat-y right (for if/when 3D box design implemented)*/;
+  background: #fff;
   margin-top: 30px;
   padding: 6em 2em 2em 2em;
 }
@@ -93,33 +94,181 @@ IDs and classes
 }
 
 
-  #header-title-container {                            /* allows for centring of header-title despite absolute positioning */
-    margin: 0 auto;
-    width: 880px;                                      /* for some reason this scales for mobile without having to add breakpoints with smaller pixel values below, could be due to Skeleton? #weird I think it's because of text-align center below, when you add background colour this element behaves as I'd expect, not centred at all */
+
+/* HEADER LOGO/TITLE AREA - lots of fancy layout stuff needed for this! */
+
+#header-left { /*contains logo in a left column*/
+  background: orange; /*#test*/
+  width: 25%;
+  height: 233px;
+  position: absolute;
+    top: 100px;
+    left: 0;
+}
+  #header-logo { /*logo itself, sits in header-logo-box and ignores its width % attribute as it has a fixed pixel width*/
+    background: url(../images/logo.png) no-repeat center/233px;
+    width: 233px;
+    height: 233px;
+  }
+#header-right { /*right side container in header, right of logo*/
+  background-color: red;
+  font-family: "Arial Narrow", sans-serif;
+  position: absolute;
+    top: 120px;
+    left: 30%;
+  width: 70%;
+}
+  #header-tagline { /*header tagline learning difficulty*/
+    background-color: purple;
+    float: left;
+    width: 76%;
+  }
+  #header-tagline h1 {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 3.2rem;
+    margin: 0;
+    padding: 0px 0 0 0;
+    text-align: left;
   }
   #header-title {
-    font-size: 5.5rem;
-    font-weight: 900;
-    margin-top: 100px;
+    background-color: purple;
+    float: left;
+    height: 75px;
+    width: 76%;
+  }
+  #header-title h1 {
+    font-size: 7.3rem;
+    margin: 0;
     padding: 0;
-    position: absolute;
-      bottom: 0;                                       /* aligns along bottom to line up with tagline text and navigation */
+    text-align: left;
+  }
+  #lottery { /*lottery logo to right of header title and tagline*/
+    background-color: brown;
+    background: url(../images/lottery.jpg) no-repeat 0 0/160px;
+    float: right;
+    height: 169px;              /*+20px over height of image to push rest of header area further down as margin-top on below doesn't seem to work */
+    width: 24%;
+  }
+  #tagline-box {/*contains phone and email taglines*/
+    background-color: green;
+    height: 50px;               /*need height to prevent floats below from stacking horizontally against this*/
+    width: 100%;
+    clear: both;                /*needed to avoid problems with float:right in header lottery logo*/
+  }
+    #tagline-email {
+      background-color: cyan;
+      width: 50%;
+      float: right;
+    }
+      #tagline-email p {
+        color: #fff;
+        float: right;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 0;
+        text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+    #tagline-phone {
+      background-color: yellow;
+      width: 50%;
+      float: left;
+    }
+      #tagline-phone p {
+        color: #fff;
+        float: left;                                      /* aligns phone text left underneath header text */
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+  #tagline-address {
+    background-color: blue;
+    width: 100%;
+    height: 70px;
     text-align: center;
-    text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
-      -1px -1px 0 #fff,
-      1px -1px 0 #fff,
-      -1px 1px 0 #fff,
-      1px 1px 0 #fff;
+  }
+    #tagline-address p {
+      color: #fff;
+      font-size: 1.75rem;
+      margin: 0 auto;                                    /*gives it a better margin along with width: 80% below*/
+      padding: 0;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      width: 80%;
+    }
+  #tagline-charity {/*charity no.*/
+    background-color: darkorange;
+    width: 100%;
+    text-align: center;
+  }
+  #tagline-charity p {
+    color: #fff;
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 
-  #header-logo {
-    background: url(../images/logo.png) no-repeat center/263px;
-    height: 171px;
-    position: absolute;                                /* aligns well until first breakpoint, then needs fixing, see below! */
-    top: 100px;
-    left: 300px;
-    width: 263px;
-  }
+
+
+/* Old layout */
+/*#header-logo {
+  background: url(../images/logo.png) no-repeat center/233px;
+  height: 233px;
+  position: absolute;                                 aligns well until first breakpoint, then needs fixing, see below!
+  top: 0;
+  left: 0;
+  width: 263px;
+}
+#header-title-container {                             allows for centring of header-title despite absolute positioning
+  margin: 0 auto;
+  width: 880px;                                       for some reason this scales for mobile without having to add breakpoints with smaller pixel values below, could be due to Skeleton? #weird I think it's because of text-align center below, when you add background colour this element behaves as I'd expect, not centred at all
+}
+#header-title {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin-top: 100px;
+  padding: 0;
+  position: absolute;
+    bottom: 0;                                        aligns along bottom to line up with tagline text and navigation
+  text-align: center;
+  text-shadow:                                        adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+#header-tagline {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin-top: 100px;
+  padding: 0;
+  text-align: center;
+  text-shadow:                                        adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+End of old layout of header title area*/
+
+
 
 
 
@@ -165,56 +314,6 @@ IDs and classes
       *display: inline;                                       /* IE7 */
       *zoom: 1;
       width: 95%;
-    }
-
-    /* taglines for phone number, email and mobile, scaling etc, appear within nav area hence why they're here */
-    #tagline-phone p {
-      color: #105cbd;
-      font-family: "Trebuchet MS", sans-serif;
-      font-size: 2.5rem;
-      margin: 0;
-      padding: 0;
-      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
-    }
-    #tagline-email p {
-      color: #3a0fc4;
-      font-family: "Trebuchet MS", sans-serif;
-      font-size: 1.75rem;
-      margin: 0;
-      padding: 0;
-      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
-    }
-    #tagline-address p {
-      color: #105cbd;
-      font-family: "Trebuchet MS", sans-serif;
-      font-size: 1.75rem;
-      margin: 0;
-      padding: 0;
-      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
-    }
-    #tagline-charity p {
-      color: #105cbd;
-      font-family: "Trebuchet MS", sans-serif;
-      font-size: 1.75rem;
-      margin: 0;
-      padding: 0;
-      text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
-        -1px -1px 0 #fff,
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
     }
 
     #navbuttons {                                             /* container for nav buttons */
