@@ -9,10 +9,6 @@
     height: 300px;
   }
 
-  #content {
-    margin-top: 30px;
-    padding-top: 12em;
-  }
   #content p {
     width: 90%;               /* reduces extent of margins on paragraph text for smaller resolutions */
   }
@@ -80,8 +76,8 @@
   }
 
   #content {
-    margin-top: 60px;
-    padding-top: 16em;
+    margin-top: 150px; /*allows navigation to overlay content box, if it was all margin it would have a clear break behind the navigation which looks bad for this design*/
+    padding-top: 6em;
   }
 
   #header-left { /*scales logo down*/
@@ -140,7 +136,6 @@
           text-align: center;
         }
       #tagline-email {
-        background-color: cyan;
         width: 100%;
         float: none;
       }
@@ -150,7 +145,11 @@
           text-align: center;
         }
     #tagline-address {
-      height: 90px;
+      height: 70px;
+      text-align: center;
+    }
+    #tagline-charity {
+      text-align: center;
     }
 
   #nav ul {
@@ -168,12 +167,18 @@
       width: 50%; /*Form a left column, along with left: 0;, right: 0; below forms the right column*/
       z-index: 0;
     }
+    #home p {
+      position: static;
+    }
     #events {
       background: #0082ba no-repeat 0 0;
       position: absolute;
         right: 0;
       width: 50%;
       z-index: 0;
+    }
+    #events p {
+      position: static;
     }
     #diary {
       background: #ffdb11 no-repeat 0 0;
@@ -183,6 +188,9 @@
       width: 50%;
       z-index: 0;
     }
+    #diary p {
+      position: static;
+    }
     #news {
       background: #ffa123 no-repeat 0 0;
       position: absolute;
@@ -190,6 +198,9 @@
         top: 58px;
       width: 50%;
       z-index: 0;
+    }
+    #news p {
+      position: static;
     }
     #videos {
       background: #ffa123 no-repeat 0 0;
@@ -199,6 +210,9 @@
       width: 50%;
       z-index: 0;
     }
+    #videos p {
+      position: static;
+    }
     #admin {
       background: #0082ba no-repeat 0 0;
       position: absolute;
@@ -207,6 +221,9 @@
       width: 50%;
       z-index: 0;
     }
+    #admin p {
+      position: static;
+    }
     #findus {
       background: #0082ba no-repeat 0 0;
       position: absolute;
@@ -214,6 +231,9 @@
         top: 174px;
       width: 50%;
       z-index: 0;
+    }
+    #findus p {
+      position: static;
     }
   #top ul li {
     font-size: 1.5rem;                                    /* fixes top logos etc so they don't interfere with design on lower resolutions; forces them to align centre-ish and out of the way of top graphics */
@@ -248,7 +268,7 @@
   }
 
   header {
-    height: 203px;                              /* Allows taglines to be snug under #header-title */
+    height: 173px;                              /* Allows taglines to be snug under #header-title */
   }
 
   table {
@@ -256,31 +276,53 @@
   }
 
   #content {
-    margin-top: 80px;                          /* moves content out from underneath of navigation */
-    padding-top: 18em;
+    margin-top: 20px;
+    padding-top: 15em; /* moves content out from underneath of navigation */
   }
 
 
 
-  #header-logo {
-    background: url(../images/logo.png) no-repeat center/153px;    /* scales image */
-    height: 153px;                /* gives it dimension, stops it from being cut off/too small */
-    position: static;             /* returns to normal alignment from absolute */
-    width: 100%;                  /* aligns mid */
+  #header-left { /*scales logo down and pushes it to the top of the viewport*/
+    height: 100px;
+    margin-top: 0;
+    position: static;
+    width: 100%;
   }
-  #header-title {
-    font-size: 3.2rem;
-    margin-top: 163px;            /* works with position: absolute; below to bump it down under the logo */
+    #header-logo {
+      background: url(../images/logo.png) no-repeat center/100px;
+      margin: 0 auto;      /*centres logo within 100% width header-left container*/
+      width: 100px;
+      height: 100px;
+    }
+  #header-right { /*changes to static so it wraps under logo*/
+    position: static;
+    width: 100%;
   }
+    #header-tagline { /*killing floats to prevent alignment issues */
+      float: none;
+    }
+    #header-title {
+      float: none;
+      margin-top: 0;
+    }
+    #lottery { /*removed to make more vertical space*/
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+    #tagline-box {/*increase height to prevent text mushing into area below*/
+      height: 60px;
+    }
+    #tagline-address {
+      height: 40px;
+    }
 
   #nav {
-    background: purple; /*#test*/
-
-    /*height: 100px;*/
     padding: 0;
-    margin: 0;
+    margin-top: 70px;     /* clears the header area */
     width: 100%;          /* helps with centring */
   }
+
 
 
     #tagline-phone p {

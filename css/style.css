@@ -11,7 +11,7 @@ Basic element customisations - body, font faces, paragraph layout etc
 ------------------------- */
 
 body {
-  background: url(../images/background.jpg) #ffeac7 no-repeat 0% 0%/100%;
+  background: #50a6cd;
   font-family: "Arial", sans-serif;
   font-size: 1.6rem;
 }
@@ -37,8 +37,7 @@ h4 {
 }
 
 header {
-  height: 373px;
-  position: relative;                                  /* allows for positioning of header-title below */
+  height: 220px;
   width: 100%;
 }
 
@@ -84,9 +83,7 @@ IDs and classes
 }*/
 
 #content {
-  background: #fff;
   margin-top: 30px;
-  padding: 6em 2em 2em 2em;
 }
 #content p {                                           /* better margins for text on desktop */
   width: 70%;
@@ -98,11 +95,10 @@ IDs and classes
 /* HEADER LOGO/TITLE AREA - lots of fancy layout stuff needed for this! */
 
 #header-left { /*contains logo in a left column*/
-  background: orange; /*#test*/
   width: 25%;
   height: 233px;
   position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
 }
   #header-logo { /*logo itself, sits in header-logo-box and ignores its width % attribute as it has a fixed pixel width*/
@@ -111,19 +107,18 @@ IDs and classes
     height: 233px;
   }
 #header-right { /*right side container in header, right of logo*/
-  background-color: red;
   font-family: "Arial Narrow", sans-serif;
   position: absolute;
-    top: 120px;
+    top: 90px;
     left: 30%;
   width: 70%;
 }
   #header-tagline { /*header tagline learning difficulty*/
-    background-color: purple;
     float: left;
     width: 76%;
   }
   #header-tagline h1 {
+    color: #22147c;
     font-family: "Arial Narrow", sans-serif;
     font-size: 3.2rem;
     margin: 0;
@@ -131,9 +126,11 @@ IDs and classes
     text-align: left;
   }
   #header-title {
-    background-color: purple;
+    color: #ffd300;
     float: left;
     height: 75px;
+    text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
+    5px 5px 0 #e57800;
     width: 76%;
   }
   #header-title h1 {
@@ -143,27 +140,23 @@ IDs and classes
     text-align: left;
   }
   #lottery { /*lottery logo to right of header title and tagline*/
-    background-color: brown;
     background: url(../images/lottery.jpg) no-repeat 0 0/160px;
     float: right;
-    height: 169px;              /*+20px over height of image to push rest of header area further down as margin-top on below doesn't seem to work */
+    height: 119px;              /*helps to pull up area below by not making it too big*/
     width: 24%;
   }
   #tagline-box {/*contains phone and email taglines*/
-    background-color: green;
-    height: 50px;               /*need height to prevent floats below from stacking horizontally against this*/
     width: 100%;
     clear: both;                /*needed to avoid problems with float:right in header lottery logo*/
   }
     #tagline-email {
-      background-color: cyan;
       width: 50%;
       float: right;
     }
       #tagline-email p {
         color: #fff;
         float: right;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin: 0;
         padding: 0;
         text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
@@ -173,14 +166,13 @@ IDs and classes
         1px 1px 0 #000;
       }
     #tagline-phone {
-      background-color: yellow;
       width: 50%;
       float: left;
     }
       #tagline-phone p {
         color: #fff;
         float: left;                                      /* aligns phone text left underneath header text */
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin: 0;
         padding: 0;
         text-shadow:
@@ -191,27 +183,21 @@ IDs and classes
       }
 
   #tagline-address {
-    background-color: blue;
+    clear: both;                              /* needed to prevent lining up with floats on phone/email */
     width: 100%;
-    height: 70px;
-    text-align: center;
   }
     #tagline-address p {
       color: #fff;
       font-size: 1.75rem;
-      margin: 0 auto;                                    /*gives it a better margin along with width: 80% below*/
       padding: 0;
       text-shadow:
       -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
       1px 1px 0 #000;
-      width: 80%;
     }
   #tagline-charity {/*charity no.*/
-    background-color: darkorange;
     width: 100%;
-    text-align: center;
   }
   #tagline-charity p {
     color: #fff;
@@ -224,51 +210,6 @@ IDs and classes
       -1px 1px 0 #000,
       1px 1px 0 #000;
   }
-
-
-
-/* Old layout */
-/*#header-logo {
-  background: url(../images/logo.png) no-repeat center/233px;
-  height: 233px;
-  position: absolute;                                 aligns well until first breakpoint, then needs fixing, see below!
-  top: 0;
-  left: 0;
-  width: 263px;
-}
-#header-title-container {                             allows for centring of header-title despite absolute positioning
-  margin: 0 auto;
-  width: 880px;                                       for some reason this scales for mobile without having to add breakpoints with smaller pixel values below, could be due to Skeleton? #weird I think it's because of text-align center below, when you add background colour this element behaves as I'd expect, not centred at all
-}
-#header-title {
-  font-size: 5.5rem;
-  font-weight: 900;
-  margin-top: 100px;
-  padding: 0;
-  position: absolute;
-    bottom: 0;                                        aligns along bottom to line up with tagline text and navigation
-  text-align: center;
-  text-shadow:                                        adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-}
-#header-tagline {
-  font-size: 5.5rem;
-  font-weight: 900;
-  margin-top: 100px;
-  padding: 0;
-  text-align: center;
-  text-shadow:                                        adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-}
-End of old layout of header title area*/
-
-
 
 
 
@@ -300,14 +241,13 @@ End of old layout of header title area*/
 
   #nav {
     color: #000;
-    font-size: 1.75rem;
-    height: 113px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 113px;        /* aligns content below nav */
+    margin-top: 40px;
     text-align: center;
     width: 100%;          /* helps with centring */
   }
-    #nav p {
-      font-size: 1.5rem;
-    }
 
     #nav .centre {
       display: inline-block;                                  /* somehow causes nav to centre */
@@ -317,12 +257,17 @@ End of old layout of header title area*/
     }
 
     #navbuttons {                                             /* container for nav buttons */
+      margin-top: 100px;
       position: relative;
       text-shadow:                                       /* adds "stroke" to text, really a fudged shadow, the best CSS 3 can do apparently */
         -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
+    }
+    #navbuttons p {
+      margin: 0;
+      padding: 0;
     }
     #navbuttons a.nav:link, a.nav:visited {
       text-decoration: none;
@@ -345,6 +290,11 @@ End of old layout of header title area*/
         width: 94px;
         z-index: 150;
       }
+      #home p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
       #events {
         background: url(../images/nav-yellow.png) no-repeat 0 0;
         height: 43px;
@@ -354,6 +304,11 @@ End of old layout of header title area*/
         width: 94px;
         z-index: 140;
       }
+      #events p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
       #diary {
         background: url(../images/nav-blue.png) no-repeat 0 0;
         height: 43px;
@@ -362,6 +317,11 @@ End of old layout of header title area*/
           right: 336px;
         width: 94px;
         z-index: 130;
+      }
+      #diary p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
       }
       #news {
         background: url(../images/nav-yellow.png) no-repeat 0 0;
@@ -373,6 +333,11 @@ End of old layout of header title area*/
         width: 94px;
         z-index: 120;
       }
+      #news p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
       #videos {
         background: url(../images/nav-orange.png) no-repeat 0 0;
         height: 43px;
@@ -381,6 +346,11 @@ End of old layout of header title area*/
           right: 168px;
         width: 94px;
         z-index: 110;
+      }
+      #videos p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
       }
       #admin {
         background: url(../images/nav-blue.png) no-repeat 0 0;
@@ -392,6 +362,11 @@ End of old layout of header title area*/
         width: 94px;
         z-index: 100;
       }
+      #admin p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
       #findus {
         background: url(../images/nav-orange.png) no-repeat 0 0;
         height: 43px;
@@ -401,6 +376,11 @@ End of old layout of header title area*/
           right: 0px;
         width: 94px;
         z-index: 90;
+      }
+      #findus p {
+        position: absolute;
+        top: 10px;
+        left: 15px;
       }
 
 /* Nav IDs end */
@@ -425,10 +405,14 @@ End of old layout of header title area*/
   text-align: right;
   width: 100%;                                            /* helps with centring navigation */
 }
-#top img {
-  margin: 0;
-  padding: 0;
-  vertical-align: top;                                    /* fixes images wanting to stick to bottom of tallest image, like the accredited logo! */
+#top a:hover {
+  color: #fff;
+}
+#top a:link {
+  color: #fff;
+}
+#top a:visited {
+  color: #fff;
 }
 #top ul {
   margin: 20px 0 0 0;                                       /* removes margin so aligns with bottom of box better
@@ -583,22 +567,19 @@ ul.sitemap {
 }
 
 .background-blue {
-  background: #c6dcf8;
+  background: #50a6cd;
 }
-.background-green {
-  background: #4fdcaf;
+.background-blue-light {
+  background: #50a6cc;
 }
-.background-green-light {
-  background: #87efcd;
+.background-yellow {
+  background: #ffe356;
 }
 .background-orange {
-  background: #ffd890;
+  background: #ffa123;
 }
 .background-orange-light {
-  background: #ffeac7;
-}
-.background-orange-dark {
-  background: #ffc55b;
+  background: #ffb65a;
 }
 .background-purple {
   background: #d2c9fa;
