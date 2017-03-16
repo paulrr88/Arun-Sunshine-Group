@@ -124,108 +124,121 @@
 
         <!--top home page area-->
 
-        <div class="twelve columns background-orange-light" style="width: 90%; margin: 3% 0 3% 5%;
-        border-bottom: 40px solid #fd8f1c;"><!--Where and When-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #50a5cc;
-          text-shadow: 2px 0px 0 #0d6eac;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Where and When?</h1>
+        <div class="background-orange-light content-box-wide"><!--Where and When-->
+          <h1 class="content-box blue">Where and When?</h1>
 
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong><?php /*perch_content('Front page Where and When?');*/ ?>We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm.</strong></p>
+          <p class="centre content-box-p"><strong><?php /*perch_content('Front page Where and When?');*/ ?>We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm.</strong></p>
         </div>
 
-        <div class="twelve columns" style="width: 90%; margin: 3% 0 3% 5%;"><!--Objective-->
+        <div id="content-objectivebox"><!--Objective-->
+          <h1 class="blue content-box">Our Objective</h1>
 
-          <div style="background: #50a6cc; width: 100%;">
-              <?php /*perch_content('Front page objective image');*/ ?><img src="images/lottery.jpg" alt="" style="width: 98%; height: 320px; margin: 0; padding: 1%;">
+          <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
+
+          <div class="background-orange-light" id="content-objectivebox-image">
+              <?php /*perch_content('Front page objective image');*/ ?><img class="content-box-img-fullwidth" src="images/photo-home-objective.jpg" alt="Our staff and members on an outing - group photo!">
+          </div>
+        </div>
+
+        <div class="row"><!--Activities & Events columns-->
+          <div class="eight columns offset-by-two content-box-col-yellow"><!--Activities-->
+            <h1 class="content-box purple">Activities</h1>
+
+            <p class="centre content-box-p"><strong>Just a few of the excellent activities on offer are:</strong></p>
+
+            <p class="centre content-box-p-big"><strong>Computer Games and Skills, Arts &amp; Crafts including Flower Arranging, Board Games, Jigsaws, Bingo, Quizes and Film Shows.</strong></p>
+
+            <div class="spacer"></div>
+
+            <div class="five columns offset-by-one">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+            <div class="five columns">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+
+            <div class="spacer"></div>
+
+            <p class="centre content-box-p"><strong>Members often decide on what activities they would like to do.</strong></p>
+
+            <p class="centre content-box-p"><strong>Refreshments are available throughout every meeting.</strong></p>
           </div>
 
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #50a5cc;
-          text-shadow: 2px 0px 0 #0d6eac;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Our Objective</h1>
+          <div class="eight columns offset-by-two content-box-col-yellow"><!--Events-->
+            <h1 class="content-box purple">Events</h1>
 
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
+            <p class="centre content-box-p"><strong>We often go on exciting outings, including:</strong></p>
+
+            <p class="centre content-box-p-big"><strong><?php /*perch_content('Events outings list');*/ ?>Pantomimes, Restaurants, Pubs, 10 pin bowling, and summer outings to Marwell Zoo, the Isle of Wight and Brighton. (Summer outings can last up to 8 hours).</strong></p>
+
+            <div class="spacer"></div>
+
+            <div class="five columns offset-by-one">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+            <div class="five columns">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="five columns offset-by-one">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+            <div class="five columns">
+              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+            </div>
+
+            <div class="spacer"></div>
+          </div>
         </div>
 
-        <hr style="background-color: #ff8800; width: 100%; clear: both; border-bottom: 20px solid #ffd301;">
+        <div class="row"><!--Membership & Volunteers columns-->
+          <div class="five columns offset-by-one content-box-col-yellow"><!--Membership-->
+            <h1 class="content-box purple">Membership</h1>
 
-        <div class="five columns background-yellow" style="
-        border-bottom: 40px solid #ffd300; margin-bottom: 5%;"><!--Activities-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #795dd6;
-          text-shadow: 2px 0px 0 #5a36cb;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Activities</h1>
+            <p class="centre content-box-p"><strong>Members must be aged 18 years or over and are invited to contribute <em>£3</em> per meeting plus a yearly membership fee of <em>£15</em>.</p>
+          </div>
 
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>Just a few of the excellent activities on offer are:</strong></p>
+          <div class="four columns offset-by-one content-box-col-yellow "><!--Volunteers-->
+            <h1 class="content-box purple">Volunteers</h1>
+
+            <p class="centre content-box-p"><strong>All of our volunteers:
+              <ul class="body">
+                <?php /*perch_content('Volunteers box'); - needed for changing of DBS and other such stuff*/ ?>
+                <li>are fully referenced and if required, Disclosure and Barring Service (DBS) checked,</li>
+                <li>have completed an Emergency Life Support First Aid course,</li>
+                <li>have attended a West Sussex Adult Protection Awareness Briefing.</li>
+              </ul>
+            </strong></p>
+          </div>
         </div>
 
-        <div class="six columns background-yellow" style="
-        border-bottom: 40px solid #ffd300; float: right; margin-right: 4%; margin-bottom: 5%;"><!--Events-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #795dd6;
-          text-shadow: 2px 0px 0 #5a36cb;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Events</h1>
-
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>We often go on exciting outings; these have included:</strong></p>
+        <div><!--Four side-by-side images near bottom-->
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
         </div>
 
-        <div class="five columns background-yellow" style="
-        border-bottom: 40px solid #ffd300;  margin-bottom: 5%;"><!--Volunteers-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #795dd6;
-          text-shadow: 2px 0px 0 #5a36cb;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Volunteers</h1>
+        <div class="twelve columns background-yellow"><!--Box with extra info-->
+          <p class="centre content-box-p"><strong>We are a small, friendly and happy group. If you would like to become a member, or you know someone who would, please ring!</strong></p>
 
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>All of our volunteers:
-            <ul class="body">
-              <li>have been Criminal Records Bureau (CRB) checked,</li>
-              <li>have completed an Emergency Life Support First Aid course,</li>
-              <li>have attended a West Sussex Adult Protection Awareness Briefing.</li>
-            </ul>
-          </strong></p>
-        </div>
+          <p class="centre content-box-p-big"><strong>Contact: Derek Moore MBE. TEL 01903 714930</strong></p>
 
-        <div class="six columns background-yellow" style="
-        border-bottom: 40px solid #ffd300; float: right; margin-right: 4%;  margin-bottom: 5%;"><!--Membership-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #795dd6;
-          text-shadow: 2px 0px 0 #5a36cb;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">Membership</h1>
+          <p class="centre content-box-p"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="">please take a look at our Admin page</a>.</strong></p>
 
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>Members must be aged 18 years or over and are invited to contribute £2 per meeting.
-            <br /><br />
-            Refreshments are available throughout the meeting and club members often become involved in their preparation!</strong></p>
-
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>We are a small, friendly and happy group.</strong></p>
-
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>If you would like to become a member, or you know someone who would, please ring!</strong></p>
-
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>Contact: Derek Moore MBE. TEL 01903 714930</strong></p>
-        </div>
-
-        <div class="five columns background-yellow" style="
-        border-bottom: 40px solid #ffd300;  margin-bottom: 5%;"><!--More box-->
-          <h1 style="margin: 0 0 0 0; padding: 20px 0 0 0;
-          color: #795dd6;
-          text-shadow: 2px 0px 0 #5a36cb;
-          border-bottom: 8px solid;
-          width: 50%;
-          margin: 0 auto;">More...</h1>
-
-          <p style="padding: 30px 0 20px 0; font-size: 2rem; text-align: center;"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="">please take a look at our Admin page</a>.</strong></p>
+          <div class="img-box-tiny">
+            <img src="images/lottery.jpg" alt="">
+          </div>
         </div>
 
 
@@ -247,24 +260,7 @@
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
 
-        <br />
-
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="about/">What is Montessori?</a></li>
-          <li><a href="datesandfees/">Dates &amp; Fees</a></li>
-          <li><a href="contact/">Contact Us</a></li>
-          <li><a href="mymontessorichild/">My Montessori Child</a></li>
-          <li><a href="about/method/">The Montessori Method</a></li>
-          <li><a href="about/history/">History of Montessori and Our Pre-school</a></li>
-          <li><a href="about/team/">Our Team</a></li>
-          <li><a href="about/policies/">Our Policies &amp; Documents</a></li>
-          <li><a href="https://www.facebook.com/The-New-Montessori-Pre-School-210642929391/">Facebook</a></li>
-        </ul>
-
-        <p><strong>&copy; <?php echo date('Y'); ?> The New Montessori Pre-school | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
-        Registered charity no. 1086853<br />
-        Company Number 3908382<br />
+        <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
         <br />
         <a href="perch/">Perch Login</a></p>
         <br />

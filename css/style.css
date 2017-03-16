@@ -10,6 +10,11 @@
 Basic element customisations - body, font faces, paragraph layout etc
 ------------------------- */
 
+a {
+  color: #0082ba; }
+a:hover {
+  color: #0FA0CE; }
+
 body {
   background: #50a6cd;
   font-family: "Arial", sans-serif;
@@ -88,6 +93,14 @@ IDs and classes
 #content p {                                           /* better margins for text on desktop */
   width: 70%;
   margin: 0 auto;
+}
+#content-objectivebox { /*home page objective box*/
+  margin: 0 0 5% 5%;
+  width: 90%;
+}
+#content-objectivebox-image {
+  margin: 0 auto;
+  width: 90%;
 }
 
 
@@ -214,15 +227,22 @@ IDs and classes
 
 
 #footer {
-  font-size: 0.75em;
+  color: #fff;
+  font-size: 1.75rem;
   text-align: center;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
   #footer a:link {
-    color: #000;
+    color: #fff;
   }
   #footer a:visited {
-    color: #000;
+    color: #fff;
   }
+
   #footer ul {
     margin-bottom: 0;
   }
@@ -441,43 +461,27 @@ h1,h2,h3,h4.title {                                                /* title at t
   padding: 1em 0 1.5em 0;
   text-align: center;
 }
-/*h1,h2,h3,h4.linkbutton {
-  color: #000;
-  margin: 0;
-  padding: 0.5em;
+h1.blue { /*3D blue style*/
+  color: #50a5cc;
+  text-shadow: 2px 0px 0 #0d6eac;
 }
-h1,h2,h3,h4.linkbutton a {
-  color: #000;
-  text-decoration: none;
-}*/
-h1.less-space, h2.less-space, h3.less-space, h4.less-space {
-  padding: 1em;
-  margin: 0;
-}
-h1.less-space-bottom, h2.less-space-bottom, h3.less-space-bottom, h4.less-space-bottom {
-  padding: 1em 1em 0.4em 1em;
-  margin: 0;
-}
-/*h1.pretty-green, h2.pretty-green, h3.pretty-green, h4.pretty-green {
-  border-bottom: 5px #4fdcaf solid;
-}
-h1.pretty-orange, h2.pretty-orange, h3.pretty-orange, h4.pretty-orange {
-  border-bottom: 5px #ffc55b solid;
-}
-h1.pretty-purple, h2.pretty-purple, h3.pretty-purple, h4.pretty-purple {
-  border-bottom: 5px #583cca solid;
-}
-h1.pretty-blue, h2.pretty-blue, h3.pretty-blue, h4.pretty-blue {
-  border-bottom: 5px #5f94dd solid;
-}*/
-h1.width-small, h2.width-small, h3.width-small, h4.width-small {
-  width: 70%;
+h1.content-box { /*for the top of a content box, title*/
+  border-bottom: 8px solid;
   margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 50%;
 }
-h1.pagenav {
-  font-size: 4.5rem;
-  margin: 0;
-  padding: 0 0 0.25em 0;
+h1.content-box-h1-purple { /*3D purple style for inside content boxes*/
+  border-bottom: 8px solid;
+
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+
+  width: 50%;
+}
+h1.purple { /*3D purple style*/
+  color: #795dd6;
+  text-shadow: 2px 0px 0 #5a36cb;
 }
 h2.mission {
   margin: 0;
@@ -489,6 +493,11 @@ h3.contents {
 
 img.200 {
   width: 200px;
+}
+img.content-box-img-fullwidth { /*image fits exactly within content box and fills it*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 img.fluid {
   max-width: 90%;
@@ -510,6 +519,19 @@ p.backtotop {
 p.centre {
   text-align: center;
 }
+p.content-box-p { /*for paragraphs in content boxes*/
+  font-size: 2rem;
+  padding: 30px 0 20px 0;
+}
+p.content-box-p-big { /*for emphasis paragraphs in content boxes*/
+  font-size: 2.2rem;
+  padding: 30px 0 20px 0;
+}
+p.content-box-p-objective { /*special adjustment just for the objectives box*/
+  font-size: 2rem;
+  padding: 30px 10px 20px 10px;
+}
+
 
 ul.body {
   padding-left: 0.5em;
@@ -573,16 +595,33 @@ ul.sitemap {
   background: #50a6cc;
 }
 .background-yellow {
-  background: #ffe356;
+  background: #fae055;
 }
 .background-orange {
   background: #ffa123;
 }
 .background-orange-light {
-  background: #ffb65a;
+  background: #ffde82;
 }
 .background-purple {
   background: #d2c9fa;
+}
+
+.content-box-col-yellow { /*for column content items - accompany with appropriate columns class from Skeleton*/
+  background: #fcfe74;
+  border-bottom: 40px solid #fae055;
+  margin-bottom: 5%;
+}
+.content-box-img-fullwidth-25 { /*contains .content-box-img-fullwidth and lets it stack against 3 others horizontally*/
+  float: left;
+  margin: 0;
+  padding: 0; 
+  width: 25%;
+}
+.content-box-wide { /*for wide content items - doesn't need to be accompanied by twelve columns class*/
+  border-bottom: 40px solid #ffb65a;
+  margin: 3% 0 3% 5%;
+  width: 90%;
 }
 
 .centre {
@@ -598,10 +637,20 @@ ul.sitemap {
   max-width: 100%;
   width: 600px;
 }
+.clear {
+  clear: both;
+}
+
+.img-box-tiny {
+  margin: 0 auto;
+  padding: 1%;
+  width: 200px;
+}
 
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
