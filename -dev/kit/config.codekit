@@ -101,6 +101,24 @@
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},
+	"\/events.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/events.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/events.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/events.kit",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/asg\/events.php",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1
+		},
 	"\/index.kit": {
 		"fileType": 2048,
 		"ignore": 0,

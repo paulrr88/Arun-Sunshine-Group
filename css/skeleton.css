@@ -10,7 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- --MY ADDITIONS for St. Andrew's website--
+- N.B. my changes marked with #changed wherever possible
 - Grid
 - Base Styles
 - Typography
@@ -44,12 +44,12 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%; /*#changed to fill entire width of viewport in tablet and mobile. Works on tablet but not mobile wierdly but didn't matter much so didn't fiddle further*/
     padding: 0; }
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 750px) { /*#changed from 550 to 750 to exclude tablets*/
   .container {
     width: 80%; }
   .column,

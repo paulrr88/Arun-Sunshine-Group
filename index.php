@@ -1,5 +1,4 @@
 
-
 <?php include('perch/runtime.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,9 +7,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Home &mdash; The New Montessori Pre-school</title>
-  <meta name="description" content="The New Montessori Pre-school is run by parents for parents. It is the only accredited Montessori pre-school in Worthing and we are proud to be the only Montessori Charity pre-school in the UK. Our Management Committee ensures that the Montessori Method of education is offered to all children at an affordable price, with highly qualified and dedicated staff, and a high ratio of adults to children.">
-  <meta name="keywords" content="accredited, active, activity, "all day care", care, charity, childcare, children, classroom, daycare, development, educate, education, evening, flexible, infant, junior, kids, learning, lessons, local, maria, "Maria Montessori", method, montessori, nursery, pre-school, preschool, school, sussex, tarring, toddler, west, worthing, affordable, curriculum, early, eyfs, foundation, stage">
+  <title>Home &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
+  <meta name="description" content="We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm. Our objective is to advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.">
   <meta name="author" content="The New Montessori Pre-school">
 
   <!-- Mobile Specific Metas
@@ -104,13 +102,13 @@
 
         <div class="twelve columns" id="navbuttons">
 
-            <a class="nav" href=""><div id="home"><p>Home</p></div></a>
-            <a class="nav" href="about/"><div id="events"><p>Events</p></div></a>
-            <a class="nav" href="datesandfees/"><div id="diary"><p>Diary</p></div></a>
-            <a class="nav" href="mymontessorichild/"><div id="news"><p>News</p></div></a>
-            <a class="nav" href="contact/"><div id="videos"><p>Videos</p></div></a>
-            <a class="nav" href=""><div id="admin"><p>Admin</p></div></a>
-            <a class="nav" href=""><div id="findus"><p>Find Us</p></div></a>
+            <a class="nav" href="index.php"><div id="home"><p>Home</p></div></a>
+            <a class="nav" href="events.php"><div id="events"><p>Events</p></div></a>
+            <a class="nav" href="diary.php"><div id="diary"><p>Diary</p></div></a>
+            <a class="nav" href="news.php"><div id="news"><p>News</p></div></a>
+            <a class="nav" href="videos.php"><div id="videos"><p>Videos</p></div></a>
+            <a class="nav" href="admin.php"><div id="admin"><p>Admin</p></div></a>
+            <a class="nav" href="findus.php"><div id="findus"><p>Find Us</p></div></a>
 
         </div>
       </div><!--Navigation area ends-->
@@ -135,7 +133,7 @@
 
           <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
 
-          <div class="background-orange-light" id="content-objectivebox-image">
+          <div class="background-orange-light-resize" id="content-objectivebox-image">
               <?php /*perch_content('Front page objective image');*/ ?><img class="content-box-img-fullwidth" src="images/photo-home-objective.jpg" alt="Our staff and members on an outing - group photo!">
           </div>
         </div>
@@ -237,7 +235,7 @@
           <p class="centre content-box-p"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="">please take a look at our Admin page</a>.</strong></p>
 
           <div class="img-box-tiny">
-            <img src="images/lottery.jpg" alt="">
+            <img alt="" class="fluid" src="images/lottery.jpg">
           </div>
         </div>
 

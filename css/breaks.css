@@ -80,21 +80,29 @@
     padding-top: 6em;
   }
 
+  #content-objectivebox-image { /*scales image up massively and brings it back within viewport; only way to compensate for the aspect ratio downsizing it at smaller resolutions*/
+    margin: 0 0 0 -48%;
+    width: 200%;
+  }
+
   #header-left { /*scales logo down*/
     height: 160px;
     margin-top: 40px;
-    width: 20%;
+    position: absolute;
+      top: 70px;
+      left: 9%;
+    width: 40%;
   }
     #header-logo {
-      background: url(../images/logo.png) no-repeat center/100px;
-      width: 100px;
-      height: 100px;
+      background: url(../images/logo.png) no-repeat center/130px;
+      width: 130px;
+      height: 130px;
     }
   #header-right { /*closer to logo in light of reduced width*/
     position: absolute;
       top: 50px;
-      left: 25%;
-    width: 70%;
+      left: 12%;
+    width: 75%;
   }
     #header-tagline {
       width: 100%;
@@ -120,7 +128,7 @@
       margin: 0 auto;
       position: absolute;
         top: 0;
-        left: 33%;
+        left: 40%;
       width: 34%;
     }
     #tagline-box {/*increase height to prevent text mushing into area below*/
@@ -235,6 +243,11 @@
     #findus p {
       position: static;
     }
+  #top { /*centres it on tablet*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
   #top ul li {
     font-size: 1.5rem;                                    /* fixes top logos etc so they don't interfere with design on lower resolutions; forces them to align centre-ish and out of the way of top graphics */
     display: inline;
@@ -243,8 +256,24 @@
     width: 70px;
   }
 
-  img.fluid {                                             /* left padding is weird, this makes it look better below max res, 1.3em is good max, 1em is good when not max */
-    padding: 1em 1em 1em 1em;
+  img.content-box-img-fullwidth { /*stops images from becoming HUGE*/
+    margin: 0 0 0 24%;
+    padding: 0;
+    width: 50%;
+  }
+  img.fluid {      /*Removes padding so can change image layout based on container which is safer with breakpoints, lets me alter an image's layout depending on circumstances, not global*/
+    padding: 0;
+  }
+  .background-orange-light-resize { /*disappears background colour*/
+    background: none;
+  }
+  .content-box-img-fullwidth-25 { /*gets rid of line of images at bottom of home page*/
+    visibility: hidden;
+  }
+  .img-box-tiny { /*makes contained image less tiny!*/
+    margin: 0 auto;
+    padding: 0 12% 0 18%; /*for some reason this works, don't ask me why #weird doesn't want to align properly without this*/
+    width: 40%;
   }
 }
 

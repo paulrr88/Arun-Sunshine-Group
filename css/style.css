@@ -461,28 +461,6 @@ h1,h2,h3,h4.title {                                                /* title at t
   padding: 1em 0 1.5em 0;
   text-align: center;
 }
-h1.blue { /*3D blue style*/
-  color: #50a5cc;
-  text-shadow: 2px 0px 0 #0d6eac;
-}
-h1.content-box { /*for the top of a content box, title*/
-  border-bottom: 8px solid;
-  margin: 0 auto;
-  padding: 20px 0 0 0;
-  width: 50%;
-}
-h1.content-box-h1-purple { /*3D purple style for inside content boxes*/
-  border-bottom: 8px solid;
-
-  margin: 0 auto;
-  padding: 20px 0 0 0;
-
-  width: 50%;
-}
-h1.purple { /*3D purple style*/
-  color: #795dd6;
-  text-shadow: 2px 0px 0 #5a36cb;
-}
 h2.mission {
   margin: 0;
   padding: 1em 0 0.5em 0;
@@ -502,7 +480,7 @@ img.content-box-img-fullwidth { /*image fits exactly within content box and fill
 img.fluid {
   max-width: 90%;
   margin: 0 auto;
-  padding: 1em 1em 1em 1.3em;
+  padding: 0 9% 0 9%;
 }
 img.left {
   float: left;
@@ -597,10 +575,16 @@ ul.sitemap {
 .background-yellow {
   background: #fae055;
 }
+.background-yellow-deep {
+  background: #ffd301;
+}
 .background-orange {
   background: #ffa123;
 }
 .background-orange-light {
+  background: #ffde82;
+}
+.background-orange-light-resize { /*basically a version that will disappear on lower breakpoints, used for home page image that goes 200% size*/
   background: #ffde82;
 }
 .background-purple {
@@ -608,14 +592,14 @@ ul.sitemap {
 }
 
 .content-box-col-yellow { /*for column content items - accompany with appropriate columns class from Skeleton*/
-  background: #fcfe74;
-  border-bottom: 40px solid #fae055;
+  background: #fae055;
+  border-bottom: 40px solid #ffd300;
   margin-bottom: 5%;
 }
 .content-box-img-fullwidth-25 { /*contains .content-box-img-fullwidth and lets it stack against 3 others horizontally*/
   float: left;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   width: 25%;
 }
 .content-box-wide { /*for wide content items - doesn't need to be accompanied by twelve columns class*/
@@ -641,10 +625,43 @@ ul.sitemap {
   clear: both;
 }
 
+.header-blue { /*3D blue style headers*/
+  border-bottom: 8px solid;
+  color: #50a5cc;
+  text-shadow: 2px 0px 0 #0d6eac;
+  margin: 0 auto;
+  padding-bottom: 0;
+  width: 75%;
+}
+.header-50 { /*title with reduced width and padding etc, useful for content boxes and to prevent border from going too far*/
+  margin: 0 auto;
+  width: 50%;
+}
+.header-content-box-purple { /*3D purple style for inside content boxes*/
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 50%;
+}
+.header-purple { /*3D purple style*/
+  border-bottom: 8px solid;
+  color: #795dd6;
+  margin: 0 auto;
+  padding-bottom: 0;
+  text-shadow: 2px 0px 0 #5a36cb;
+  width: 75%;
+}
+.header-purple-sub { /*for underneath other larger headers*/
+  color: #5a36cb;
+  margin: 0 auto;
+  padding: 0;
+  text-shadow: 2px 0px 0 #22007c;
+  width: 75%;
+}
+
 .img-box-tiny {
   margin: 0 auto;
   padding: 1%;
-  width: 200px;
+  width: 25%;
 }
 
 .left {
