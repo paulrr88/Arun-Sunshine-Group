@@ -7,8 +7,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Events &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
-  <meta name="description" content="">
+  <title>Find Us &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
+  <meta name="description" content="Arun Sunshine Group meets alternate weekends at Dove Lodge, 49 Beach Road, Littlehampton, West Sussex. See map below:
+Littlehampton is on the east side of the river Arun, just south of the A27 main South-coast road.">
   <meta name="author" content="The New Montessori Pre-school">
 
   <!-- Mobile Specific Metas
@@ -120,48 +121,34 @@
 
       <!--Content begins #content--><div class="twelve columns background-yellow-deep" id="content">
 
-      <h1 class="header-blue header-50">Events</h1>
+      <h1 class="header-blue header-50">How to Find Us</h1>
 
-      <?php /*perch_content('Events entry'); - will need to include all of the below as a custom text area*/ ?>
-        <div class="ten columns offset-by-one background-orange-light content-box-wide">
-          <h2 class="header-purple">Summer Outing to Amberley Museum and Heritage Centre</h2>
+      <div class="ten columns offset-by-one background-orange-light content-box-wide">
 
-          <h3 class="header-purple-sub">Sunday 3rd July 2016</h3>
+        <p class="centre">The group meets alternate weekends at Dove Lodge, 49 Beach Road, Littlehampton, West Sussex. See map below.</p>
 
-          <div class="spacer"></div>
+        <p class="centre">Littlehampton is on the east side of the river Arun, just south of the A27 main south-coast road.</p>
 
-          <p>This year we visited Amberley Museum and Heritage Centre. 22 members attended along with 2 volunteers, 1 Community Transport driver and 2 members of staff.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>We travelled to and from Amberley by two minibuses, which we hired from Arun Community Transport. We set off at 10am and returned at 5pm. We had a fantastic day out and the weather was brilliant. The objective for the day was firstly to give our members an enjoyable day out and to give their Carers some much-needed respite.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>We arrived at Amberley at 10.45am and met up with other members who had been transported there by their Carers. We split up into 4 groups and visited various attractions including a ride on the train. We had lunch at 1pm. Some members brought their own lunch and others bought lunch in the cafe. After lunch we split up again and visited the remaining attractions including a ride on the open top bus. We met up again at 15.30pm for drinks and ice creams and then visited the gift shop.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>We boarded the buses at 4.15pm and then made our way back home to Littlehampton and arrived back at 5pm.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>All in all it was a good day out. Many thanks must go to all our fantastic volunteers and our volunteer mini bus driver Steven who generously gave their leisure time, and to all who, in some way or another, made a contribution to the day.</p>
-
-          <p>Derek Moore MBE<br />
-            Project Leader</p>
+        <div class="ten columns offset-by-one">
+          <a href="images/map.jpg"><img alt="Map of where Littlehampton is on the south coast" class="content-box-img-fullwidth" src="images/map.jpg"></a>
         </div>
 
+        <p class="centre nopadding"><a href="<?php /*perch_content('Littlehampton Google Maps link');*/ ?>">Click here for Google Maps</a></p>
 
+        <p class="centre"><strong>By rail:</strong> Littlehampton is served by <strong>Southern from London Victoria via Gatwick Airport</strong> (<?php /*perch_content('Southern railway contact info');*/ ?>0845 127 2920/<a href="">www.southernrailway.com</a>).</p>
 
+        <p class="centre"><strong>By road:</strong> Littlehampton is served by the <strong>A259 coastal road</strong> and is to the <strong>west of Worthing and the East of Bognor Regis</strong>.</p>
+
+        <div class="ten columns offset-by-one">
+          <a href="images/map-dovelodge.jpg"><img alt="Map of where Dove Lodge is in Littlehampton" class="content-box-img-fullwidth" src="images/map-dovelodge.jpg"></a>
+        </div>
+
+        <p class="centre nopadding"><a href="<?php /*perch_content('Dove Lodge Google Maps link'); - https://www.google.com/maps/place/Dove+Lodge/@50.807117,-0.5406767,17z/data=!4m5!3m4!1s0x4875a5773a798f89:0x85aed2a826ce716c!8m2!3d50.8071136!4d-0.538488*/ ?>">Click here for Google Maps</a></p>
+
+        <div class="spacer"></div>
+      </div>
+
+      <div class="spacer"></div>
 
 
       </div><!--Content ends-->

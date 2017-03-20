@@ -123,13 +123,30 @@
         <!--top home page area-->
 
         <div class="background-orange-light content-box-wide"><!--Where and When-->
-          <h1 class="content-box blue">Where and When?</h1>
+          <h1 class="header-blue">Where and When?</h1>
 
           <p class="centre content-box-p"><strong><?php /*perch_content('Front page Where and When?');*/ ?>We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm.</strong></p>
         </div>
 
+        <div><!--Four side-by-side images-->
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+          <div class="content-box-img-fullwidth-25">
+            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+
         <div id="content-objectivebox"><!--Objective-->
-          <h1 class="blue content-box">Our Objective</h1>
+          <h1 class="header-blue">Our Objective</h1>
 
           <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
 
@@ -140,7 +157,7 @@
 
         <div class="row"><!--Activities & Events columns-->
           <div class="eight columns offset-by-two content-box-col-yellow"><!--Activities-->
-            <h1 class="content-box purple">Activities</h1>
+            <h1 class="header-purple">Activities</h1>
 
             <p class="centre content-box-p"><strong>Just a few of the excellent activities on offer are:</strong></p>
 
@@ -163,7 +180,7 @@
           </div>
 
           <div class="eight columns offset-by-two content-box-col-yellow"><!--Events-->
-            <h1 class="content-box purple">Events</h1>
+            <h1 class="header-purple">Events</h1>
 
             <p class="centre content-box-p"><strong>We often go on exciting outings, including:</strong></p>
 
@@ -193,13 +210,13 @@
 
         <div class="row"><!--Membership & Volunteers columns-->
           <div class="five columns offset-by-one content-box-col-yellow"><!--Membership-->
-            <h1 class="content-box purple">Membership</h1>
+            <h1 class="header-purple">Membership</h1>
 
             <p class="centre content-box-p"><strong>Members must be aged 18 years or over and are invited to contribute <em>£3</em> per meeting plus a yearly membership fee of <em>£15</em>.</p>
           </div>
 
           <div class="four columns offset-by-one content-box-col-yellow "><!--Volunteers-->
-            <h1 class="content-box purple">Volunteers</h1>
+            <h1 class="header-purple">Volunteers</h1>
 
             <p class="centre content-box-p"><strong>All of our volunteers:
               <ul class="body">
@@ -212,7 +229,7 @@
           </div>
         </div>
 
-        <div><!--Four side-by-side images near bottom-->
+        <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
             <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>

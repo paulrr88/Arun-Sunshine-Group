@@ -7,8 +7,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Events &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
-  <meta name="description" content="">
+  <title>Diary &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
+  <meta name="description" content="A diary of all of our upcoming activities and events at Arun Sunshine Group!">
   <meta name="author" content="The New Montessori Pre-school">
 
   <!-- Mobile Specific Metas
@@ -118,47 +118,28 @@
 
     <!--Row begins--><div>
 
-      <!--Content begins #content--><div class="twelve columns background-yellow-deep" id="content">
+      <!--Content begins #content--><div class="twelve columns background-blue-dark" id="content">
 
-      <h1 class="header-blue header-50">Events</h1>
+      <h1 class="header-orange header-50">Diary</h1>
 
-      <?php /*perch_content('Events entry'); - will need to include all of the below as a custom text area*/ ?>
-        <div class="ten columns offset-by-one background-orange-light content-box-wide">
-          <h2 class="header-purple">Summer Outing to Amberley Museum and Heritage Centre</h2>
+      <div class="ten columns offset-by-one background-orange-light">
+        <p class="centre"><?php /*perch_content('Events and meetings PDF link');*/ ?>To download the full list of events and meetings in PDF format, click here</p>
+        <p class="centre small">To view downloadable documents on this site,<br />
+          <strong>you will need Adobe Acrobat Reader</strong><br />
+          (<?php /*perch_content('Adobe Acrobat download link global');*/ ?><strong>which you can download here - FREE</strong>)</p>
+      </div>
 
-          <h3 class="header-purple-sub">Sunday 3rd July 2016</h3>
 
-          <div class="spacer"></div>
 
-          <p>This year we visited Amberley Museum and Heritage Centre. 22 members attended along with 2 volunteers, 1 Community Transport driver and 2 members of staff.</p>
+      <div class="ten columns offset-by-one background-orange-light content-box-wide">
+        <h2 class="header-purple">Meetings and Events <?php /*perch_content('Meetings and Events dates in title');*/ ?>January to December 2017</h2>
 
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
+        <?php /*perch_content('Dates and activities');*/ ?>
 
-          <p>We travelled to and from Amberley by two minibuses, which we hired from Arun Community Transport. We set off at 10am and returned at 5pm. We had a fantastic day out and the weather was brilliant. The objective for the day was firstly to give our members an enjoyable day out and to give their Carers some much-needed respite.</p>
+        <p>If you are unable to attend a meeting please let the project leader know as soon as possible.</p>
 
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>We arrived at Amberley at 10.45am and met up with other members who had been transported there by their Carers. We split up into 4 groups and visited various attractions including a ride on the train. We had lunch at 1pm. Some members brought their own lunch and others bought lunch in the cafe. After lunch we split up again and visited the remaining attractions including a ride on the open top bus. We met up again at 15.30pm for drinks and ice creams and then visited the gift shop.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>We boarded the buses at 4.15pm and then made our way back home to Littlehampton and arrived back at 5pm.</p>
-
-          <img alt="" src="images/lottery.jpg">
-          <img alt="" src="images/lottery.jpg">
-
-          <p>All in all it was a good day out. Many thanks must go to all our fantastic volunteers and our volunteer mini bus driver Steven who generously gave their leisure time, and to all who, in some way or another, made a contribution to the day.</p>
-
-          <p>Derek Moore MBE<br />
-            Project Leader</p>
-        </div>
+        <?php /*perch_content('Derek contact details global');*/ ?>
+      </div>
 
 
 

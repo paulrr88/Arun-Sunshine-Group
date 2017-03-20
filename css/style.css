@@ -569,6 +569,9 @@ ul.sitemap {
 .background-blue {
   background: #50a6cd;
 }
+.background-blue-dark {
+  background: #0d6eac;
+}
 .background-blue-light {
   background: #50a6cc;
 }
@@ -591,6 +594,11 @@ ul.sitemap {
   background: #d2c9fa;
 }
 
+.content-box-col-orange { /*for column content items - accompany with appropriate columns class from Skeleton*/
+  background: #ffde82;
+  border-bottom: 40px solid #ffb65a;
+  margin-bottom: 5%;
+}
 .content-box-col-yellow { /*for column content items - accompany with appropriate columns class from Skeleton*/
   background: #fae055;
   border-bottom: 40px solid #ffd300;
@@ -637,10 +645,18 @@ ul.sitemap {
   margin: 0 auto;
   width: 50%;
 }
-.header-content-box-purple { /*3D purple style for inside content boxes*/
+.header-content-box { /*for inside content boxes*/
   margin: 0 auto;
   padding: 20px 0 0 0;
   width: 50%;
+}
+.header-orange { /*3D blue style headers*/
+  border-bottom: 8px solid;
+  color: #fd8f1c;
+  text-shadow: 2px 0px 0 #b35e00;
+  margin: 0 auto;
+  padding-bottom: 0;
+  width: 75%;
 }
 .header-purple { /*3D purple style*/
   border-bottom: 8px solid;
@@ -668,10 +684,17 @@ ul.sitemap {
   float: left;
 }
 
+.nopadding {
+  padding: 0;
+}
+
 .right {
   float: right;
 }
 
+.small {
+  font-size: 1.5rem;
+}
 .spacer {                                                /* works with Skeleton to allow white space between vertically stacked divs */
   float: left;
   height: 3em;
