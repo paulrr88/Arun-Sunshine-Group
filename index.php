@@ -130,16 +130,16 @@
 
         <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Top strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Top strip image 2');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Top strip image 3');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Top strip image 4');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
         </div>
 
@@ -166,10 +166,10 @@
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Activities image 1');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Activities image 2');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
@@ -189,19 +189,19 @@
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Events image 1');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Events image 2');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Events image 3');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
+              <?php /*perch_content('Events image 4');*/ ?><img src="images/lottery.jpg" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
@@ -231,16 +231,16 @@
 
         <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
+            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.jpg" alt="">
           </div>
         </div>
 
@@ -254,8 +254,9 @@
           <div class="img-box-tiny">
             <img alt="" class="fluid" src="images/lottery.jpg">
           </div>
-        </div>
 
+          <div class="spacer"></div>
+        </div>
 
       </div><!--Content ends-->
 
@@ -275,7 +276,29 @@
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
 
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Diary</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">Admin</a></li>
+          <li><a href="">Find Us</a></li>
+        </ul>
+
+        <br />
+
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
+
+        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
+          Registered Charity No 1114803.</p>
+
+        <p>Tel: 01903 714930<br />
+          Email: derek@arunsunshine.org.uk<br />
+          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+
+
+        <br />
         <br />
         <a href="perch/">Perch Login</a></p>
         <br />

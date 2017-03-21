@@ -247,14 +247,13 @@ IDs and classes
     margin-bottom: 0;
   }
   #footer ul li {
-    border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
     display: inline-block;                                  /* displays everything horizontal instead of vertical */
     margin-right: 20px;
     padding-right: 20px;
   }
   #footer ul li:last-child {
-    border-right: 0;                                        /* stops border on last link */
     margin-right: 0;
+    padding-right: 0;
   }
 
 /* Navigation IDs */
@@ -566,11 +565,12 @@ ul.sitemap {
   width: 70%;
 }
 
+
 .background-blue {
   background: #50a6cd;
 }
 .background-blue-dark {
-  background: #0d6eac;
+  background: #0082ba;
 }
 .background-blue-light {
   background: #50a6cc;
@@ -612,6 +612,11 @@ ul.sitemap {
 }
 .content-box-wide { /*for wide content items - doesn't need to be accompanied by twelve columns class*/
   border-bottom: 40px solid #ffb65a;
+  margin: 3% 0 3% 5%;
+  width: 90%;
+}
+.content-box-wide-yellow {
+  border-bottom: 40px solid #ffd300;
   margin: 3% 0 3% 5%;
   width: 90%;
 }
@@ -704,3 +709,20 @@ ul.sitemap {
 .vertical-top {
   vertical-align: top;
 }
+
+/*YouTube embed responsive solution from https://coolestguidesontheplanet.com/videodrome/youtube/*/
+
+  .video-container {
+  	position:relative;
+  	padding-bottom:56.25%;
+  	padding-top:30px;
+  	height:0;
+  	overflow:hidden;
+  }
+  .video-container iframe, .video-container object, .video-container embed {
+  	position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  }

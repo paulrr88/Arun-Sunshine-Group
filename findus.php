@@ -119,11 +119,11 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
 
     <!--Row begins--><div>
 
-      <!--Content begins #content--><div class="twelve columns background-yellow-deep" id="content">
+      <!--Content begins #content--><div class="twelve columns background-orange" id="content">
 
-      <h1 class="header-blue header-50">How to Find Us</h1>
+      <h1 class="header-purple header-50">How to Find Us</h1>
 
-      <div class="ten columns offset-by-one background-orange-light content-box-wide">
+      <div class="ten columns offset-by-one background-yellow content-box-wide-yellow">
 
         <p class="centre">The group meets alternate weekends at Dove Lodge, 49 Beach Road, Littlehampton, West Sussex. See map below.</p>
 
@@ -169,7 +169,29 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
 
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
 
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Diary</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">Admin</a></li>
+          <li><a href="">Find Us</a></li>
+        </ul>
+
+        <br />
+
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
+
+        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
+          Registered Charity No 1114803.</p>
+
+        <p>Tel: 01903 714930<br />
+          Email: derek@arunsunshine.org.uk<br />
+          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+
+
+        <br />
         <br />
         <a href="perch/">Perch Login</a></p>
         <br />
