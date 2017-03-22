@@ -1,0 +1,19 @@
+<perch:help>
+  <p><strong>Instructions:</strong></p>
+
+  <p>This is for the diary page table that displays all the dates and events etc. </p>
+
+  <p>You can either:<br />
+    <span style="padding-left: 20px">- <strong>Edit an existing diary entry</strong> by changing the fields that are currently on this page</span><br />
+    <span style="padding-left: 20px">- <strong>Add a new diary entry</strong> to the bottom of the list by scrolling to the bottom of this page and clicking "Save &amp; Add another", which will result in a new blank set of fields appearing at the bottom of this page that can then be filled in with appropriate text.</span>
+
+</perch:help>
+
+<tr class="background-orange-mid">
+  <td scope="row"><perch:content id="textDate" type="text" label="Date of event" required="true" title="true" /></td>
+
+  <td class="background-teal" scope="row"><strong><perch:content id="textEvent" type="text" label="Event title/times etc" required="true" title="true" /></strong></td>
+
+  <td scope="row"><perch:content id="textActivities" type="text" label="Activities taking place at event" required="true" title="true" /><br /><br />
+  <strong><em><perch:content id="textAlert" type="text" label="Special notice" required="false" title="true" help="Special alert (optional), attached to activities message, will appear in bold italicised text" /></em></strong></td>
+</tr>

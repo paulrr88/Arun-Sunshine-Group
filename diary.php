@@ -134,7 +134,18 @@
       <div class="ten columns offset-by-one background-orange-light content-box-wide">
         <h2 class="header-purple">Meetings and Events <?php /*perch_content('Meetings and Events dates in title');*/ ?>January to December 2017</h2>
 
-        <?php /*perch_content('Dates and activities');*/ ?>
+        <table id="table" summary="Table of opening hours">
+          <thead>
+            <tr class="background-orange">
+              <th class="centre" scope="col">Date</th>
+              <th class="centre" scope="col">Event</th>
+              <th class="centre" scope="col">Activities</th>
+            </tr>
+          </thead>
+          <tbody class="diary">
+            <?php perch_content('Dates and activities'); ?>
+          </tbody>
+        </table>
 
         <p>If you are unable to attend a meeting please let the project leader know as soon as possible.</p>
 
@@ -200,7 +211,29 @@
 
   </div><!--Container ends-->
 
-  
+  <script>
+  // fix for mobile table layout from http://sitesforprofit.com/responsive-tables-in-wordpress
+
+  var headertext = [];
+  var headers = document.querySelectorAll("thead");
+  var tablebody = document.querySelectorAll("tbody");
+
+  for (var i = 0; i < headers.length; i++) {
+    headertext[i]=[];
+    for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+      var current = headrow;
+      headertext[i].push(current.textContent);
+      }
+  }
+
+  for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+    for (var i = 0, row; row = tbody.rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        col.setAttribute("data-th", headertext[h][j]);
+      }
+    }
+  }
+</script>
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

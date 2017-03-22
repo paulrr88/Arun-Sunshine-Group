@@ -1,0 +1,30 @@
+<perch:help>
+  <p><strong>Instructions:</strong></p>
+
+  <p>This is for the events page, with each section here representing one event.</p>
+
+  <p>You can either:<br />
+    <span style="padding-left: 20px">- <strong>Edit an existing event</strong> by changing the fields that are currently on this page</span><br />
+    <span style="padding-left: 20px">- <strong>Add a new diary entry</strong> to the bottom of the list by scrolling to the bottom of this page and clicking "Save &amp; Add another", which will result in a new blank set of fields appearing at the bottom of this page that can then be filled in with appropriate text.</span></p>
+
+  <p>You can also delete an event by clicking the small red delete button to the top right of an event entry.</p>
+
+  <p>The main part of the event article should be placed in the large text box, and you can find various buttons that will allow you formatting options. The editor uses "Markdown", which is basically just using symbols and text to do what a text editor like Word would typically do. You can just highlight text and press the buttons and the Markdown will be added automatically.</p>
+
+  <p>If you want to add an image:</p>
+
+  <p>This will create a line of Markdown that looks something like this: ![image](/directory/image.jpg)</p>
+
+  <p>If you want to have multiple images side by side</p>
+
+</perch:help>
+
+<div class="ten columns offset-by-one background-orange-light content-box-wide">
+  <h2 class="header-purple"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h2>
+
+  <h3 class="header-purple-sub"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></h3>
+
+  <div class="spacer"></div>
+
+  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true" />
+</div>

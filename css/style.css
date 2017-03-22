@@ -509,6 +509,12 @@ p.content-box-p-objective { /*special adjustment just for the objectives box*/
   padding: 30px 10px 20px 10px;
 }
 
+tbody.diary td { /*helps with diary layout, makes it less massive*/
+  padding: 0.2em;
+  margin: 0;
+  text-align: center;
+}
+
 
 ul.body {
   padding-left: 0.5em;
@@ -575,6 +581,9 @@ ul.sitemap {
 .background-blue-light {
   background: #50a6cc;
 }
+.background-blue-lighter {
+  background: #70d0ff;
+}
 .background-yellow {
   background: #fae055;
 }
@@ -584,6 +593,9 @@ ul.sitemap {
 .background-orange {
   background: #ffa123;
 }
+.background-orange-mid {
+  background: #ffba58;
+}
 .background-orange-light {
   background: #ffde82;
 }
@@ -592,6 +604,9 @@ ul.sitemap {
 }
 .background-purple {
   background: #d2c9fa;
+}
+.background-teal {
+  background: #52bda5;
 }
 
 .content-box-col-orange { /*for column content items - accompany with appropriate columns class from Skeleton*/
