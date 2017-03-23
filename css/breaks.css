@@ -66,8 +66,8 @@
   /* CSS for table mobile fix JavaScript, from: http://sitesforprofit.com/responsive-tables-in-wordpress */
   table {width:100%;}
   thead {display: none;}
-  tr:nth-of-type(2n) {background-color: inherit;}
-  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+  /*tr:nth-of-type(2n) {background-color: inherit;} removed as it seems to make background disappear on final cell*/
+  tr td:first-child {background: #ffa123; font-weight:bold;font-size:1.3em;} /*change this to control the properties of the newly styled table cell that's added when the resize happens*/
   tbody td {display: block;  text-align:center;}
   tbody td:before {
     content: attr(data-th);

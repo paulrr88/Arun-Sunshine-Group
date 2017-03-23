@@ -130,7 +130,8 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
         <p class="centre">Littlehampton is on the east side of the river Arun, just south of the A27 main south-coast road.</p>
 
         <div class="ten columns offset-by-one">
-          <a href="images/map.jpg"><img alt="Map of where Littlehampton is on the south coast" class="content-box-img-fullwidth" src="images/map.jpg"></a>
+          <a href="images/map.jpg"><img alt="Map of where Littlehampton is on the south coast" class="content-box-img-fullwidth" src="images/map.jpg">
+          <p class="centre nopadding nomargin">(Click to enlarge)</a></p>
         </div>
 
         <p class="centre nopadding"><a href="<?php /*perch_content('Littlehampton Google Maps link');*/ ?>">Click here for Google Maps</a></p>
@@ -140,7 +141,8 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
         <p class="centre"><strong>By road:</strong> Littlehampton is served by the <strong>A259 coastal road</strong> and is to the <strong>west of Worthing and the East of Bognor Regis</strong>.</p>
 
         <div class="ten columns offset-by-one">
-          <a href="images/map-dovelodge.jpg"><img alt="Map of where Dove Lodge is in Littlehampton" class="content-box-img-fullwidth" src="images/map-dovelodge.jpg"></a>
+          <a href="images/map-dovelodge.jpg"><img alt="Map of where Dove Lodge is in Littlehampton" class="content-box-img-fullwidth" src="images/map-dovelodge.jpg">
+          <p class="centre nopadding nomargin">(Click to enlarge)</a></p>
         </div>
 
         <p class="centre nopadding"><a href="<?php /*perch_content('Dove Lodge Google Maps link'); - https://www.google.com/maps/place/Dove+Lodge/@50.807117,-0.5406767,17z/data=!4m5!3m4!1s0x4875a5773a798f89:0x85aed2a826ce716c!8m2!3d50.8071136!4d-0.538488*/ ?>">Click here for Google Maps</a></p>
