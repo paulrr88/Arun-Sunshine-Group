@@ -122,13 +122,13 @@
 
       <h1 class="header-blue header-50">Videos</h1>
 
-      <?php /*perch_content('Videos list');*/ ?>
-      <div class="ten columns offset-by-one background-yellow content-box-wide">
+      <?php perch_content('Videos list'); ?>
+      <!--<div class="ten columns offset-by-one background-yellow content-box-wide">
         <h1 class="header-purple">Title</h1>
         <div class="video-container">
           <iframe src="//www.youtube.com/embed/izGBqHhqH7k" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
+      </div>-->
 
 
 

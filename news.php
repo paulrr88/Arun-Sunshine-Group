@@ -121,11 +121,8 @@
       <!--Content begins #content--><div class="twelve columns background-yellow-deep" id="content">
 
       <h1 class="header-blue header-50">News</h1>
-
-      <?php /*perch_content('News items');*/ ?>
-      <div class="ten columns offset-by-one background-orange-light content-box-wide">
-        <p>Placeholder</p>
-      </div>
+      
+      <?php perch_content('News items'); ?>
 
 
 
