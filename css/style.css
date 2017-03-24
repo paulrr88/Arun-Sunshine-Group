@@ -153,7 +153,7 @@ IDs and classes
     text-align: left;
   }
   #lottery { /*lottery logo to right of header title and tagline*/
-    background: url(../images/lottery.jpg) no-repeat 0 0/160px;
+    background: url(../images/lottery.png) no-repeat 0 0/160px;
     float: right;
     height: 119px;              /*helps to pull up area below by not making it too big*/
     width: 24%;
