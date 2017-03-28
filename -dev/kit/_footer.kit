@@ -30,12 +30,12 @@
 
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
 
-        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
-          Registered Charity No 1114803.</p>
+        <p><?php perch_content('Address'); ?><br />
+          <?php perch_content('Charity number'); ?></p>
 
-        <p>Tel: 01903 714930<br />
-          Email: derek@arunsunshine.org.uk<br />
-          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+        <p>Tel: <?php perch_content('Phone number'); ?><br />
+          Email: <?php perch_content('Email Derek'); ?><br />
+          Send mail to <?php perch_content('Email Info'); ?> with questions or comments about this website.</p>
 
 
         <br />

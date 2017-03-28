@@ -71,23 +71,23 @@
             <div id="tagline-box">
               <div id="tagline-phone">
                 <p><strong>
-                  <?php /*perch_content('Phone number');*/ ?>01903 714930
+                  <?php perch_content('Phone number'); ?>
                 </strong></p>
               </div>
               <div id="tagline-email">
                 <p><strong>
-                  <?php /*perch_content('Email Derek');*/ ?>derek@arunsunshine.org.uk
+                  <?php perch_content('Email Derek'); ?>
                 </strong></p>
               </div>
             </div>
             <div id="tagline-address">
               <p>
-                <?php /*perch_content('Address');*/ ?><strong>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex, BN17 5JG</strong>
+                <strong><?php perch_content('Address'); ?></strong>
               </p>
             </div>
             <div id="tagline-charity">
               <p><strong>
-                <?php /*perch_content('Charity number');*/ ?><em>Registered Charity Number 1114803</em>
+                <em><?php perch_content('Charity number'); ?></em>
               </strong></p>
             </div>
           </div>
@@ -125,21 +125,21 @@
         <div class="background-orange-light content-box-wide"><!--Where and When-->
           <h1 class="header-blue">Where and When?</h1>
 
-          <p class="centre content-box-p"><strong><?php /*perch_content('Front page Where and When?');*/ ?>We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm.</strong></p>
+          <p class="centre content-box-p"><strong><?php perch_content('Front page Where and When?'); ?></strong></p>
         </div>
 
         <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Top strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Top strip image 1'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Top strip image 2');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Top strip image 2'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Top strip image 3');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Top strip image 3'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Top strip image 4');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Top strip image 4'); ?>
           </div>
         </div>
 
@@ -151,7 +151,7 @@
           <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
 
           <div class="background-orange-light-resize" id="content-objectivebox-image">
-              <?php /*perch_content('Front page objective image');*/ ?><img class="content-box-img-fullwidth" src="images/photo-home-objective.jpg" alt="Our staff and members on an outing - group photo!">
+              <?php perch_content('Front page objective image'); ?><img class="content-box-img-fullwidth" src="images/photo-home-objective.jpg" alt="Our staff and members on an outing - group photo!">
           </div>
         </div>
 
@@ -166,10 +166,10 @@
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php /*perch_content('Activities image 1');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Activities image 1'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <?php /*perch_content('Activities image 2');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Activities image 2'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
@@ -184,24 +184,24 @@
 
             <p class="centre content-box-p"><strong>We often go on exciting outings, including:</strong></p>
 
-            <p class="centre content-box-p-big"><strong><?php /*perch_content('Events outings list');*/ ?>Pantomimes, Restaurants, Pubs, 10 pin bowling, and summer outings to Marwell Zoo, the Isle of Wight and Brighton. (Summer outings can last up to 8 hours).</strong></p>
+            <p class="centre content-box-p-big"><strong><?php perch_content('Events outings list'); ?>Pantomimes, Restaurants, Pubs, 10 pin bowling, and summer outings to Marwell Zoo, the Isle of Wight and Brighton. (Summer outings can last up to 8 hours).</strong></p>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php /*perch_content('Events image 1');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 1'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <?php /*perch_content('Events image 2');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 2'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php /*perch_content('Events image 3');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 3'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
             <div class="five columns">
-              <?php /*perch_content('Events image 4');*/ ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 4'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
             </div>
 
             <div class="spacer"></div>
@@ -220,7 +220,7 @@
 
             <p class="centre content-box-p"><strong>All of our volunteers:
               <ul class="body">
-                <?php /*perch_content('Volunteers box'); - needed for changing of DBS and other such stuff*/ ?>
+                <?php perch_content('Volunteers box'); ?>
                 <li>are fully referenced and if required, Disclosure and Barring Service (DBS) checked,</li>
                 <li>have completed an Emergency Life Support First Aid course,</li>
                 <li>have attended a West Sussex Adult Protection Awareness Briefing.</li>
@@ -231,16 +231,16 @@
 
         <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php /*perch_content('Bottom strip image 1');*/ ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
           </div>
         </div>
 
@@ -290,12 +290,12 @@
 
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
 
-        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
-          Registered Charity No 1114803.</p>
+        <p><?php perch_content('Address'); ?><br />
+          <?php perch_content('Charity number'); ?></p>
 
-        <p>Tel: 01903 714930<br />
-          Email: derek@arunsunshine.org.uk<br />
-          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+        <p>Tel: <?php perch_content('Phone number'); ?><br />
+          Email: <?php perch_content('Email Derek'); ?><br />
+          Send mail to <?php perch_content('Email Info'); ?> with questions or comments about this website.</p>
 
 
         <br />

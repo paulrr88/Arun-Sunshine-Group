@@ -71,23 +71,23 @@
             <div id="tagline-box">
               <div id="tagline-phone">
                 <p><strong>
-                  <?php /*perch_content('Phone number');*/ ?>01903 714930
+                  <?php perch_content('Phone number'); ?>
                 </strong></p>
               </div>
               <div id="tagline-email">
                 <p><strong>
-                  <?php /*perch_content('Email Derek');*/ ?>derek@arunsunshine.org.uk
+                  <?php perch_content('Email Derek'); ?>
                 </strong></p>
               </div>
             </div>
             <div id="tagline-address">
               <p>
-                <?php /*perch_content('Address');*/ ?><strong>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex, BN17 5JG</strong>
+                <strong><?php perch_content('Address'); ?></strong>
               </p>
             </div>
             <div id="tagline-charity">
               <p><strong>
-                <?php /*perch_content('Charity number');*/ ?><em>Registered Charity Number 1114803</em>
+                <em><?php perch_content('Charity number'); ?></em>
               </strong></p>
             </div>
           </div>
@@ -123,16 +123,16 @@
       <h1 class="header-orange header-50">Diary</h1>
 
       <div class="ten columns offset-by-one background-orange-light">
-        <p class="centre"><?php /*perch_content('Events and meetings PDF link');*/ ?>To download the full list of events and meetings in PDF format, click here</p>
+        <p class="centre"><?php perch_content('Events and meetings PDF link');*/ ?>To download the full list of events and meetings in PDF format, click here</p>
         <p class="centre small">To view downloadable documents on this site,<br />
           <strong>you will need Adobe Acrobat Reader</strong><br />
-          (<?php /*perch_content('Adobe Acrobat download link global');*/ ?><strong>which you can download here - FREE</strong>)</p>
+          (<?php perch_content('Adobe Acrobat download link global');*/ ?><strong>which you can download here - FREE</strong>)</p>
       </div>
 
 
 
       <div class="ten columns offset-by-one background-orange-light content-box-wide">
-        <h2 class="header-purple">Meetings and Events <?php /*perch_content('Meetings and Events dates in title');*/ ?>January to December 2017</h2>
+        <h2 class="header-purple">Meetings and Events <?php perch_content('Meetings and Events dates in title');*/ ?>January to December 2017</h2>
 
         <table id="table" summary="Table of opening hours">
           <thead>
@@ -149,7 +149,7 @@
 
         <p>If you are unable to attend a meeting please let the project leader know as soon as possible.</p>
 
-        <?php /*perch_content('Derek contact details global'); CONTACT: Derek Moore MBE
+        <?php perch_content('Derek contact details global'); CONTACT: Derek Moore MBE
                         Tel: 01903 714930 Home
                       Mob: 07968 515788*/ ?>
       </div>
@@ -190,12 +190,12 @@
 
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
 
-        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
-          Registered Charity No 1114803.</p>
+        <p><?php perch_content('Address'); ?><br />
+          <?php perch_content('Charity number'); ?></p>
 
-        <p>Tel: 01903 714930<br />
-          Email: derek@arunsunshine.org.uk<br />
-          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+        <p>Tel: <?php perch_content('Phone number'); ?><br />
+          Email: <?php perch_content('Email Derek'); ?><br />
+          Send mail to <?php perch_content('Email Info'); ?> with questions or comments about this website.</p>
 
 
         <br />

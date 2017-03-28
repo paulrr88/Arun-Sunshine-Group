@@ -71,23 +71,23 @@
             <div id="tagline-box">
               <div id="tagline-phone">
                 <p><strong>
-                  <?php /*perch_content('Phone number');*/ ?>01903 714930
+                  <?php perch_content('Phone number'); ?>
                 </strong></p>
               </div>
               <div id="tagline-email">
                 <p><strong>
-                  <?php /*perch_content('Email Derek');*/ ?>derek@arunsunshine.org.uk
+                  <?php perch_content('Email Derek'); ?>
                 </strong></p>
               </div>
             </div>
             <div id="tagline-address">
               <p>
-                <?php /*perch_content('Address');*/ ?><strong>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex, BN17 5JG</strong>
+                <strong><?php perch_content('Address'); ?></strong>
               </p>
             </div>
             <div id="tagline-charity">
               <p><strong>
-                <?php /*perch_content('Charity number');*/ ?><em>Registered Charity Number 1114803</em>
+                <em><?php perch_content('Charity number'); ?></em>
               </strong></p>
             </div>
           </div>
@@ -161,12 +161,12 @@
 
         <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
 
-        <p>Arun Sunshine Group, Dove Lodge, 49 Beach Road, Littlehampton, West Sussex BN17 5JG.<br />
-          Registered Charity No 1114803.</p>
+        <p><?php perch_content('Address'); ?><br />
+          <?php perch_content('Charity number'); ?></p>
 
-        <p>Tel: 01903 714930<br />
-          Email: derek@arunsunshine.org.uk<br />
-          Send mail to info@arunsunshine.org.uk with questions or comments about this website.</p>
+        <p>Tel: <?php perch_content('Phone number'); ?><br />
+          Email: <?php perch_content('Email Derek'); ?><br />
+          Send mail to <?php perch_content('Email Info'); ?> with questions or comments about this website.</p>
 
 
         <br />
