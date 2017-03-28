@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteRule ^events/$ events.php
+RewriteRule ^diary/$ diary.php
+RewriteRule ^news/$ news.php
+RewriteRule ^videos/$ videos.php
+RewriteRule ^admin/$ admin.php
+RewriteRule ^findus/$ findus.php
+RewriteRule ^sitemap/$ sitemap.php [L]
+
+# This only worked because I created subfolders corresponding with rewrite rule on server, otherwise it wouldn't have it. Still works without subfolders on localhost. Doesn't work for live as can't go more than one folder down without getting an forbidden message.
+# super reduced down, no need for [L] until after last statement and caret ^ doesn't seem to be needed but is a good idea from what tutorials say as it prevents erroneous strings from being accepted for redirect
+
+</IfModule>

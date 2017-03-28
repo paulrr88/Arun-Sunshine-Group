@@ -79,7 +79,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/sitemap.kit",
-		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/sitemap.php",
+		"outputAbbreviatedPath": "\/Applications\/MAMP\/htdocs\/asg\/sitemap.php",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1
 		},

@@ -7,8 +7,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Admin &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
-  <meta name="description" content="Download and read our latest reports and information, and also find some links to other websites that may be of interest to you.">
+  <title>Sitemap &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
+  <meta name="description" content="Sitemap for Arun Sunshine Group website.">
   <meta name="author" content="The New Montessori Pre-school">
 
   <!-- Mobile Specific Metas
@@ -118,38 +118,35 @@
 
     <!--Row begins--><div>
 
-      <!--Content begins #content--><div class="twelve columns background-blue-dark" id="content">
-
-      <h1 class="header-orange header-50">Admin</h1>
-
-
-      <div class="ten columns offset-by-one background-orange-light">
-        <p class="centre small">To view downloadable documents on this site,<br />
-          <strong>you will need Adobe Acrobat Reader</strong><br />
-          (<?php /*perch_content('Adobe Acrobat download link global');*/ ?><strong>which you can download here - FREE</strong>)</p>
-      </div>
-
-      <div class="spacer"></div>
-
-      <div class="six columns content-box-col-orange">
-        <h1 class="header-50 header-blue">Reports</h1>
-        <?php /*perch_content('Reports list');*/ ?><p>Placeholder</p>
-      </div>
-
-      <div class="five columns content-box-col-orange">
-        <h1 class="header-50 header-blue">Policies, forms, updates etc</h1>
-        <?php /*perch_content('Policies, forms, updates etc list');*/ ?><p>Placeholder</p>
-      </div>
-
-      <div class="ten columns offset-by-one background-orange-light content-box-wide">
-        <h1 class="header-50 header-blue">Other websites that may be of interest</h1>
-
-        <?php perch_content('Other websites that may be of interest list'); ?>
-      </div>
+    <!--Row begins--><div class="row">
 
 
 
+      <!--Content begins #content--><div class="twelve columns">
 
+      <h1 class="title">The New Montessori Pre-school Sitemap</h1>
+
+      <ul class="sitemap">
+        <li><a href="../">Home</a></li>
+        <li>About Us
+          <ul>
+            <li><a href="../about/">What is Montessori?</a></li>
+            <li><a href="../about/method/">The Montessori Method</a></li>
+            <li><a href="../about/history/">History of Montessori and Our Pre-school</a></li>
+            <li><a href="../about/team/">Our Team</a></li>
+            <li><a href="../about/policies/">Our Policies &amp; Documents</a></li>
+          </ul>
+        </li>
+        <li><a href="../datesandfees/">Dates &amp; Fees</a></li>
+        <li><a href="../mymontessorichild/">My Montessori Child</a></li>
+        <li><a href="../contact/">Contact Us</a></li>
+        <li><a href="https://www.facebook.com/The-New-Montessori-Pre-School-210642929391/">Facebook</a></li>
+      </ul>
+
+      <br />
+      <br />
+
+    </div><!--Row ends-->
 
       </div><!--Content ends-->
 

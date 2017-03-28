@@ -17,14 +17,14 @@
 
   <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css"><!-- reset file do not change -->
-  <link rel="stylesheet" href="css/skeleton.css"><!-- framework CSS -->
-  <link rel="stylesheet" href="css/style.css"><!--my additions-->
-  <link rel="stylesheet" href="css/breaks.css"><!--breakpoints of mine-->
+  <link rel="stylesheet" href="../css/normalize.css"><!-- reset file do not change -->
+  <link rel="stylesheet" href="../css/skeleton.css"><!-- framework CSS -->
+  <link rel="stylesheet" href="../css/style.css"><!--my additions-->
+  <link rel="stylesheet" href="../css/breaks.css"><!--breakpoints of mine-->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
   <!-- Google fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +40,7 @@
 
       <!--Start of top information area--><div class="twelve columns" id="top">
         <ul class="nostyle">
-          <li class="vertical-top"><a href="sitemap/">Sitemap</a></li>
+          <li class="vertical-top"><a href="../sitemap/">Sitemap</a></li>
         </ul>
       </div><!--End of top information area-->
 
@@ -102,13 +102,13 @@
 
         <div class="twelve columns" id="navbuttons">
 
-            <a class="nav" href="index.php"><div id="home"><p>Home</p></div></a>
-            <a class="nav" href="events.php"><div id="events"><p>Events</p></div></a>
-            <a class="nav" href="diary.php"><div id="diary"><p>Diary</p></div></a>
-            <a class="nav" href="news.php"><div id="news"><p>News</p></div></a>
-            <a class="nav" href="videos.php"><div id="videos"><p>Videos</p></div></a>
-            <a class="nav" href="admin.php"><div id="admin"><p>Admin</p></div></a>
-            <a class="nav" href="findus.php"><div id="findus"><p>Find Us</p></div></a>
+            <a class="nav" href="../"><div id="home"><p>Home</p></div></a>
+            <a class="nav" href="../events/"><div id="events"><p>Events</p></div></a>
+            <a class="nav" href="../diary/"><div id="diary"><p>Diary</p></div></a>
+            <a class="nav" href="../news/"><div id="news"><p>News</p></div></a>
+            <a class="nav" href="../videos/"><div id="videos"><p>Videos</p></div></a>
+            <a class="nav" href="../admin/"><div id="admin"><p>Admin</p></div></a>
+            <a class="nav" href="../findus/"><div id="findus"><p>Find Us</p></div></a>
 
         </div>
       </div><!--Navigation area ends-->
@@ -200,7 +200,7 @@
 
         <br />
         <br />
-        <a href="perch/">Perch Login</a></p>
+        <a href="../perch/">Perch Login</a></p>
         <br />
         <br />
         <br />
