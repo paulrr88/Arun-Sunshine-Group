@@ -103,6 +103,22 @@ IDs and classes
   width: 90%;
 }
 
+#event { /*targeting the event box that events stuff goes into from Perch*/
+}
+#event img { /*targets images that are alone*/
+  margin: 0 0 0 25%;
+  padding: 0;
+  width: 50%;
+}
+#event p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+  margin: 0;
+  padding: 0;
+  width: 45%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
+}
+#event p img:first-child {
+  margin-right: 10%; /*so there's some space between two images in a line*/
+}
+
 
 
 /* HEADER LOGO/TITLE AREA - lots of fancy layout stuff needed for this! */

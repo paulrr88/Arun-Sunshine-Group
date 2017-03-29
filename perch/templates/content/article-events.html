@@ -1,3 +1,4 @@
+
 <perch:help>
   <p><strong>Instructions:</strong></p>
 
@@ -17,9 +18,14 @@
     <span style="padding-left: 20px">- In the box that appears, click Browse...</span><br />
     <span style="padding-left: 20px">- This will bring up a box that shows your hard drive, now you can navigate to the folder with the desired image, and click Open to upload it.</span><br /><br />
 
-  <p>This will create a line of Markdown that looks something like this: <code>![image](/directory/image.jpg)</code>. You can cut and paste this if you want to move it around your writing and reposition it.</p>
+  <p>This will create a line of Markdown that looks something like this: <code>[cms:asset 60]</code>. You can cut and paste this if you want to move it around your writing and reposition it.</p>
 
-  <p>If you want to have multiple images side by side, simply move the above code into the same line with a space inbetween, so: <code>![image1](/directory/image1.jpg) ![image2](/directory/image2.jpg)</code></p>
+  <p>If you want to have multiple images side by side, simply move the above code into the same line with NO SPACE inbetween, so:<br /><code>[cms:asset 60][cms:asset 61]</code>. This should happen automatically if you just put one image in after another without moving the cursor. I recommend having only two images to a line, so:</p>
+
+  <p><code>[cms:asset 60][cms:asset 61]<br />
+    [cms:asset 62][cms:asset 63]</code></p>
+
+  <p>Otherwise the layout will start to go wrong!</p>
 
   <p><strong>If you want to have larger text</strong>, use the H symbol and select between headings 1-6 (1 is largest, 6 is smallest).</p>
 
@@ -27,12 +33,12 @@
 
 </perch:help>
 
-<div class="ten columns offset-by-one background-orange-light content-box-wide">
+<div class="ten columns offset-by-one background-orange-light content-box-wide" id="event">
   <h2 class="header-purple"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h2>
 
   <h3 class="header-purple-sub"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></h3>
 
   <div class="spacer"></div>
 
-  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true" />
+  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="simplemde" required="true" />
 </div>

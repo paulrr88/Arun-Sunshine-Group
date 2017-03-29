@@ -38,7 +38,7 @@
           <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
 
           <div class="background-orange-light-resize" id="content-objectivebox-image">
-              <?php perch_content('Front page objective image'); ?><img class="content-box-img-fullwidth" src="images/photo-home-objective.jpg" alt="Our staff and members on an outing - group photo!">
+              <?php perch_content('Front page objective image'); ?>
           </div>
         </div>
 
@@ -48,15 +48,24 @@
 
             <p class="centre content-box-p"><strong>Just a few of the excellent activities on offer are:</strong></p>
 
-            <p class="centre content-box-p-big"><strong>Computer Games and Skills, Arts &amp; Crafts including Flower Arranging, Board Games, Jigsaws, Bingo, Quizes and Film Shows.</strong></p>
+            <p class="centre content-box-p-big"><strong><?php perch_content('Activities list'); ?></strong></p>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php perch_content('Activities image 1'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Activities image 1'); ?>
             </div>
             <div class="five columns">
-              <?php perch_content('Activities image 2'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Activities image 2'); ?>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="five columns offset-by-one">
+              <?php perch_content('Activities image 3'); ?>
+            </div>
+            <div class="five columns">
+              <?php perch_content('Activities image 4'); ?>
             </div>
 
             <div class="spacer"></div>
@@ -71,24 +80,24 @@
 
             <p class="centre content-box-p"><strong>We often go on exciting outings, including:</strong></p>
 
-            <p class="centre content-box-p-big"><strong><?php perch_content('Events outings list'); ?>Pantomimes, Restaurants, Pubs, 10 pin bowling, and summer outings to Marwell Zoo, the Isle of Wight and Brighton. (Summer outings can last up to 8 hours).</strong></p>
+            <p class="centre content-box-p-big"><strong><?php perch_content('Events outings list'); ?></strong></p>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php perch_content('Events image 1'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 1'); ?>
             </div>
             <div class="five columns">
-              <?php perch_content('Events image 2'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 2'); ?>
             </div>
 
             <div class="spacer"></div>
 
             <div class="five columns offset-by-one">
-              <?php perch_content('Events image 3'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 3'); ?>
             </div>
             <div class="five columns">
-              <?php perch_content('Events image 4'); ?><img src="images/lottery.png" alt="" class="content-box-img-fullwidth">
+              <?php perch_content('Events image 4'); ?>
             </div>
 
             <div class="spacer"></div>
@@ -99,7 +108,7 @@
           <div class="five columns offset-by-one content-box-col-yellow"><!--Membership-->
             <h1 class="header-purple">Membership</h1>
 
-            <p class="centre content-box-p"><strong>Members must be aged 18 years or over and are invited to contribute <em>£3</em> per meeting plus a yearly membership fee of <em>£15</em>.</p>
+            <p class="centre content-box-p"><strong>Members must be aged 18 years or over and are invited to contribute <em><?php perch_content('Membership cost per meeting'); ?></em> per meeting plus a yearly membership fee of <em><?php perch_content('Membership cost per year'); ?></em>.</p>
           </div>
 
           <div class="four columns offset-by-one content-box-col-yellow "><!--Volunteers-->
@@ -107,10 +116,7 @@
 
             <p class="centre content-box-p"><strong>All of our volunteers:
               <ul class="body">
-                <?php perch_content('Volunteers box'); ?>
-                <li>are fully referenced and if required, Disclosure and Barring Service (DBS) checked,</li>
-                <li>have completed an Emergency Life Support First Aid course,</li>
-                <li>have attended a West Sussex Adult Protection Awareness Briefing.</li>
+                <?php perch_content('Volunteers list'); ?>
               </ul>
             </strong></p>
           </div>
@@ -118,28 +124,28 @@
 
         <div><!--Four side-by-side images-->
           <div class="content-box-img-fullwidth-25">
-            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 1'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 2'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 3'); ?>
           </div>
           <div class="content-box-img-fullwidth-25">
-            <?php perch_content('Bottom strip image 1'); ?><img class="content-box-img-fullwidth" src="images/lottery.png" alt="">
+            <?php perch_content('Bottom strip image 4'); ?>
           </div>
         </div>
 
         <div class="twelve columns background-yellow"><!--Box with extra info-->
           <p class="centre content-box-p"><strong>We are a small, friendly and happy group. If you would like to become a member, or you know someone who would, please ring!</strong></p>
 
-          <p class="centre content-box-p-big"><strong>Contact: Derek Moore MBE. TEL 01903 714930</strong></p>
+          <p class="centre content-box-p-big"><strong>Contact: Derek Moore MBE. TEL <?php perch_content('Phone number'); ?></strong></p>
 
-          <p class="centre content-box-p"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="">please take a look at our Admin page</a>.</strong></p>
+          <p class="centre content-box-p"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="admin/">please take a look at our Admin page</a>.</strong></p>
 
           <div class="img-box-tiny">
-            <img alt="" class="fluid" src="images/lottery.png">
+            <img alt="Lottery funded logo" class="fluid" src="images/lottery.png">
           </div>
 
           <div class="spacer"></div>
