@@ -13,23 +13,27 @@
       <div class="ten columns offset-by-one background-orange-light">
         <p class="centre small">To view downloadable documents on this site,<br />
           <strong>you will need Adobe Acrobat Reader</strong><br />
-          (<?php perch_content('Adobe Acrobat download link global');*/ ?><strong>which you can download here - FREE</strong>)</p>
+          (<strong><a href="<?php perch_content('Adobe Acrobat download link global'); ?>">which you can download here - FREE</a></strong>)</p>
       </div>
 
       <div class="spacer"></div>
 
       <div class="six columns content-box-col-orange">
         <h1 class="header-50 header-blue">Reports</h1>
-        <?php perch_content('Reports list');*/ ?><p>Placeholder</p>
+        <ul class="body">
+          <?php perch_content('Reports list'); ?>
+        </ul>
       </div>
 
       <div class="five columns content-box-col-orange">
         <h1 class="header-50 header-blue">Policies, forms, updates etc</h1>
-        <?php perch_content('Policies, forms, updates etc list');*/ ?><p>Placeholder</p>
+        <ul class="body">
+          <?php perch_content('Policies, forms, updates etc list'); ?>
+        </ul>
       </div>
 
       <div class="ten columns offset-by-one background-orange-light content-box-wide">
-        <h1 class="header-50 header-blue">Other websites that may be of interest</h1>
+        <h1 class="header-50 header-purple">Other websites that may be of interest</h1>
 
         <?php perch_content('Other websites that may be of interest list'); ?>
       </div>

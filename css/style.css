@@ -571,24 +571,6 @@ ul.nostyle {                                             /* removes styling from
   list-style: none;
   margin-left: 1.5rem;
 }
-ul.pagenav {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
-ul.pagenav li {
-  border-right: #000 solid 1px;                           /* adds the line effect to right of each link in footer */
-  display: inline-block;                                  /* displays everything horizontal instead of vertical */
-}
-ul.pagenav li.noborder {
-  border-right: 0;                                        /* stops border on any link it's not wanted on */
-  margin-right: 0;
-}
-ul.pagenav li.pagenav-li {
-  margin: 0;
-  padding: 0 1.5em 0 1.5em;
-}
 
 
 .background-blue {
@@ -769,6 +751,19 @@ ul.pagenav li.pagenav-li {
     margin: 0;
     padding: 2% 5% 2% 5%;
     text-align: left;
+  }
+  .newsbox img { /*targets images that are alone*/
+    margin: 0 0 0 25%;
+    padding: 0;
+    width: 50%;
+  }
+  .newsbox p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+    margin: 0;
+    padding: 0;
+    width: 45%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
+  }
+  .newsbox p img:first-child {
+    margin-right: 10%; /*so there's some space between two images in a line*/
   }
 
 .nomargin {
