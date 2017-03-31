@@ -125,7 +125,7 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
 
       <div class="ten columns offset-by-one background-yellow content-box-wide-yellow">
 
-        <p class="centre">The group meets alternate weekends at Dove Lodge, 49 Beach Road, Littlehampton, West Sussex. See map below.</p>
+        <p class="centre">The group meets alternate weekends at <?php perch_content('Address shortened'); ?>. See map below.</p>
 
         <p class="centre">Littlehampton is on the east side of the river Arun, just south of the A27 main south-coast road.</p>
 
@@ -134,9 +134,9 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
           <p class="centre nopadding nomargin">(Click to enlarge)</a></p>
         </div>
 
-        <p class="centre nopadding"><a href="<?php perch_content('Littlehampton Google Maps link');*/ ?>">Click here for Google Maps</a></p>
+        <p class="centre nopadding"><a href="<?php perch_content('Littlehampton Google Maps link'); ?>">Click here for Google Maps</a></p>
 
-        <p class="centre"><strong>By rail:</strong> Littlehampton is served by <strong>Southern from London Victoria via Gatwick Airport</strong> (<?php perch_content('Southern railway contact info');*/ ?>0845 127 2920/<a href="">www.southernrailway.com</a>).</p>
+        <p class="centre"><strong>By rail:</strong> Littlehampton is served by <strong>Southern from London Victoria via Gatwick Airport</strong> (<?php perch_content('Southern railway phone number'); ?>/<a href="<?php perch_content('Southern railway website'); ?>"><?php perch_content('Southern railway website'); ?></a>)</p>
 
         <p class="centre"><strong>By road:</strong> Littlehampton is served by the <strong>A259 coastal road</strong> and is to the <strong>west of Worthing and the East of Bognor Regis</strong>.</p>
 
@@ -145,7 +145,7 @@ Littlehampton is on the east side of the river Arun, just south of the A27 main 
           <p class="centre nopadding nomargin">(Click to enlarge)</a></p>
         </div>
 
-        <p class="centre nopadding"><a href="<?php perch_content('Dove Lodge Google Maps link'); - https://www.google.com/maps/place/Dove+Lodge/@50.807117,-0.5406767,17z/data=!4m5!3m4!1s0x4875a5773a798f89:0x85aed2a826ce716c!8m2!3d50.8071136!4d-0.538488*/ ?>">Click here for Google Maps</a></p>
+        <p class="centre nopadding"><a href="<?php perch_content('Dove Lodge Google Maps link'); ?>">Click here for Google Maps</a></p>
 
         <div class="spacer"></div>
       </div>
