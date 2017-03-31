@@ -174,13 +174,13 @@
       <!--Footer begins #footer--><div class="twelve columns" id="footer">
 
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">Diary</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Admin</a></li>
-          <li><a href="">Find Us</a></li>
+          <li><a href="../">Home</a></li>
+          <li><a href="../events/">Events</a></li>
+          <li><a href="../diary/">Diary</a></li>
+          <li><a href="../news/">News</a></li>
+          <li><a href="../videos/">Videos</a></li>
+          <li><a href="../admin/">Admin</a></li>
+          <li><a href="../findus/">Find Us</a></li>
         </ul>
 
         <br />
