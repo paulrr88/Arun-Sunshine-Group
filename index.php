@@ -146,7 +146,7 @@
         <div class="spacer"></div>
 
         <div id="content-objectivebox"><!--Objective-->
-          <h1 class="header-blue">Our Objective</h1>
+          <h1 class="clear header-blue">Our Objective</h1>
 
           <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
 
@@ -183,7 +183,7 @@
 
             <div class="spacer"></div>
 
-            <p class="centre content-box-p"><strong>Members often decide on what activities they would like to do.</strong></p>
+            <p class="centre clear content-box-p"><strong>Members often decide on what activities they would like to do.</strong></p>
 
             <p class="centre content-box-p"><strong>Refreshments are available throughout every meeting.</strong></p>
           </div>
