@@ -61,7 +61,7 @@
                 Arun Sunshine Group
               </h1>
             </div>
-            <div id="lottery"></div>
+            <?php perch_content('Lottery logo in header'); ?>
             <div id="header-tagline">
               <h1>
                 For Adults With A Learning Difficulty
@@ -123,6 +123,16 @@
       <h1 class="header-blue header-50">Events</h1>
 
       <?php perch_content('Events entries'); ?>
+
+      <div class="ten columns offset-by-one background-orange-light content-box-wide">
+        <h1 class="header-purple"><?php perch_content('Previous PDFs list header'); ?></h1>
+
+        <br />
+
+        <ul class="body centre">
+          <?php perch_content('Previous PDFs list'); ?>
+        </ul>
+      </div>
 
 
 

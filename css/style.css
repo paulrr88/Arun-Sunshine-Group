@@ -162,6 +162,65 @@ IDs and classes
 }
 
 
+#funding { /*targeting the funding area at bottom of home page; having to copy news and events CSS almost exactly because this stylesheet is inefficient! Only thing that really changes is the img stuff*/
+}
+#funding h1 {
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+}
+#funding h2 {
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+}
+  #funding h2.event-title {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 75%;
+  }
+#funding h3 {
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+}
+  #funding h3.event-date {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 75%;
+  }
+#funding h4 {
+  font-size: 2.9rem;
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
+}
+#funding h5 {
+  font-size: 2.7rem;
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
+}
+#funding h6 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
+}
+#funding img { /*targets images that are alone*/
+  margin: 0 0 0 40%;
+  padding: 0;
+  width: 20%;
+}
+#funding p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+  margin: 0 16% 0 16%;
+  padding: 0;
+  width: 20%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
+}
+#funding p img:first-child {
+  margin-right: 10%; /*so there's some space between two images in a line*/
+}
+
+
 
 /* HEADER LOGO/TITLE AREA - lots of fancy layout stuff needed for this! */
 
@@ -216,6 +275,9 @@ IDs and classes
     height: 119px;              /*helps to pull up area below by not making it too big*/
     width: 24%;
   }
+    #nolottery {
+      visibility: none;
+    }
   #tagline-box {/*contains phone and email taglines*/
     width: 100%;
     clear: both;                /*needed to avoid problems with float:right in header lottery logo*/

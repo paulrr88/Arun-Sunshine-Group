@@ -61,7 +61,7 @@
                 Arun Sunshine Group
               </h1>
             </div>
-            <div id="lottery"></div>
+            <?php perch_content('Lottery logo in header'); ?>
             <div id="header-tagline">
               <h1>
                 For Adults With A Learning Difficulty
@@ -257,9 +257,15 @@
 
           <p class="centre content-box-p"><strong>For forms, policies and info on other websites which may be of interest to you, <a href="admin/">please take a look at our Admin page</a>.</strong></p>
 
-          <div class="img-box-tiny">
+          <h1 class="header-blue">Funding:</h1>
+
+          <div class="spacer"></div>
+
+          <?php perch_content('Funding section at bottom of page'); ?>
+
+          <!--<div class="img-box-tiny">
             <img alt="Lottery funded logo" class="fluid" src="images/lottery.png">
-          </div>
+          </div>-->
 
           <div class="spacer"></div>
         </div>

@@ -61,7 +61,7 @@
                 Arun Sunshine Group
               </h1>
             </div>
-            <div id="lottery"></div>
+            <?php perch_content('Lottery logo in header'); ?>
             <div id="header-tagline">
               <h1>
                 For Adults With A Learning Difficulty

@@ -312,11 +312,19 @@
   #footer {
     font-size: 1.5rem;
   }
-
   #footer ul li {
     display: block;
     margin: 0;
     padding: 0;
+  }
+
+  #funding img { /*targets funding section images that are alone*/
+    margin: 0 0 0 30%;
+    width: 40%;
+  }
+  #funding p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+    margin: 0 2% 0 2%;
+    width: 40%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
   }
 
   #header-left { /*scales logo down and pushes it to the top of the viewport*/

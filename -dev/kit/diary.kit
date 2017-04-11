@@ -32,7 +32,12 @@
       <h1 class="header-orange header-50">Diary</h1>
 
       <div class="ten columns offset-by-one background-orange-light">
-        <p class="centre"><?php perch_content('Events and meetings PDF link'); ?></p>
+        <div class="spacer"></div>
+
+        <ul class="body centre">
+          <?php perch_content('Events and meetings PDF links'); ?>
+        </ul>
+
         <p class="centre small">To view downloadable documents on this site,<br />
           <strong>you will need Adobe Acrobat Reader</strong><br />
           (<strong><a href="<?php perch_content('Adobe Acrobat download link global'); ?>">which you can download here - FREE</a></strong>)</p>
