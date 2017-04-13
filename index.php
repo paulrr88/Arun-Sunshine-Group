@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Home &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="We meet at Dove Lodge, 49 Beach road, Littlehampton on alternate Sundays from 2pm to 5pm. Our objective is to advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

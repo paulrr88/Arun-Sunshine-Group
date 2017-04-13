@@ -10,7 +10,7 @@
   <title>Find Us &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="Arun Sunshine Group meets alternate weekends at Dove Lodge, 49 Beach Road, Littlehampton, West Sussex. See map below:
 Littlehampton is on the east side of the river Arun, just south of the A27 main South-coast road.">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

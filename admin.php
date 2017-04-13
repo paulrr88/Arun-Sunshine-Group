@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Admin &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="Download and read our latest reports and information, and also find some links to other websites that may be of interest to you.">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

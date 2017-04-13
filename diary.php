@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Diary &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="A diary of all of our upcoming activities and events at Arun Sunshine Group!">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

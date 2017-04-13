@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Sitemap &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="Sitemap for Arun Sunshine Group website.">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

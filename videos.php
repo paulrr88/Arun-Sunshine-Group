@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>Videos &mdash; Arun Sunshine Group, For Adults With A Learning Difficulty</title>
   <meta name="description" content="A selection of recordings of our various activities and events!">
-  <meta name="author" content="The New Montessori Pre-school">
+  <meta name="author" content="Arun Sunshine Group">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
