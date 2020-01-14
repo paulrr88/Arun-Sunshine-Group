@@ -148,7 +148,7 @@
         <div id="content-objectivebox"><!--Objective-->
           <h1 class="clear header-blue">Our Objective</h1>
 
-          <p class="background-orange-light centre content-box-p-objective"><strong>To advance the education and welfare of adults with learning difficulties, and to provide support for their families and carers, in order to provide a better standard of life for such people.</strong></p>
+          <p class="background-orange-light centre content-box-p-objective"><strong><?php perch_content('Front page objective text'); ?></strong></p>
 
           <div class="background-orange-light-resize" id="content-objectivebox-image">
               <?php perch_content('Front page objective image'); ?>
